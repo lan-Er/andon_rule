@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>订单总量</title>
+    <g id="供应总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-276.000000, -299.000000)" id="编组-3备份-6">
+            <g transform="translate(272.000000, 295.000000)" id="编组-3">
+                <polygon id="多边形" fill="#64C8BC" transform="translate(24.000000, 24.000000) rotate(-330.000000) translate(-24.000000, -24.000000) " points="24 7 38.7224319 15.5 38.7224319 32.5 24 41 9.27756814 32.5 9.27756814 15.5"></polygon>
+                <g id="编组" transform="translate(17.000000, 16.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M4.09016078,15.0048401 L0.00149714286,15.0121662 L0.00149714286,0.0121662338 L4.09016078,0.0194924037 L4.09016078,15.0048401 Z M9.54582896,15.0048401 L5.45405496,15.0048401 L5.45405496,5.01460829 L9.54582896,5.01460829 L9.54582896,15.0048401 Z M14.9981123,15.0121662 L10.9097231,15.0048401 L10.9097231,7.51216623 L15.0014971,7.51216623 L14.9981123,15.0121662 Z" id="形状"></path>
+                </g>
+                <rect id="矩形" x="4" y="4" width="40" height="40"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

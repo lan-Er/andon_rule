@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>领料</title>
+    <defs>
+        <rect id="path-1" x="-1.27897692e-13" y="-1.42108547e-14" width="41.28" height="41.28"></rect>
+        <rect id="path-3" x="1.92" y="1.92" width="37.44" height="37.44"></rect>
+        <filter x="-6.7%" y="-6.7%" width="113.4%" height="113.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.176470588   0 0 0 0 0.807843137   0 0 0 0 0.952941176  0 0 0 0.637838724 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-549.000000, -475.000000)">
+            <g id="编组-22备份" transform="translate(550.000000, 474.000000)">
+                <g id="编组-13" transform="translate(0.000000, 2.000000)">
+                    <g id="形状结合">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" stroke-opacity="0.36756993" stroke="#2DCEF3" stroke-width="0.5" xlink:href="#path-1"></use>
+                        <path d="M0.96,40.32 L0.96,42.24 L-0.96,42.24 L-0.96,40.32 L0.96,40.32 Z M42.24,40.32 L42.24,42.24 L40.32,42.24 L40.32,40.32 L42.24,40.32 Z M0.96,-0.96 L0.96,0.96 L-0.96,0.96 L-0.96,-0.96 L0.96,-0.96 Z M42.24,-0.96 L42.24,0.96 L40.32,0.96 L40.32,-0.96 L42.24,-0.96 Z" fill="#2DCEF3" mask="url(#mask-2)"></path>
+                    </g>
+                    <g id="矩形" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                    <polygon id="三角形" fill="#2DCEF3" transform="translate(5.280000, 5.280000) rotate(-270.000000) translate(-5.280000, -5.280000) " points="1.92 1.92 8.64 8.64 1.92 8.64"></polygon>
+                    <g id="编组" transform="translate(9.000000, 9.000000)" fill="#04C3D0" fill-rule="nonzero">
+                        <path d="M0,4.60122699 L11.9631902,10.1226994 L23.9263804,4.60122699 L11.9631902,0 L0,4.60122699 Z M12.8834356,11.5375767 L12.8834356,23.5007669 L23.9263804,18.404908 L23.9263804,6.44171779 L12.8834356,11.5375767 Z M0,6.44171779 L0,18.404908 L11.0429448,23.5007669 L11.0429448,11.5375767 L0,6.44171779 Z M10.1226994,14.8849693 L0.920245399,10.5569402 L0.920245399,8.71644939 L10.1226994,13.0473543 L10.1226994,14.8849693 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

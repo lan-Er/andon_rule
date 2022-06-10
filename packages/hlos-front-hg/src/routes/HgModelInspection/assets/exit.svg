@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮_退出</title>
+    <defs>
+        <path d="M16.7829457,6.41395349 L16.7829457,11.5984496 C12.5410853,13.9550387 9.71317828,18.668217 9.71317828,23.8527132 C9.71317828,31.6294573 16.075969,37.992248 23.8527132,37.992248 C31.6294573,37.992248 37.992248,31.6294573 37.992248,23.8527132 C37.992248,18.668217 35.1643411,13.9550387 30.9224806,11.5984496 L30.9224806,6.41395349 C37.7565891,9.24186047 42.7054263,16.075969 42.7054263,23.8527132 C42.7054263,34.2217054 34.2217054,42.7054263 23.8527132,42.7054263 C13.4837209,42.7054263 5,34.2217054 5,23.8527132 C5,15.84031 9.94883721,9.24186047 16.7829457,6.41395349 Z M21.496124,5 L26.2093023,5 L26.2093023,16.7829457 L21.496124,16.7829457 L21.496124,5 Z" id="path-1"></path>
+        <filter x="-10.6%" y="-5.3%" width="121.2%" height="121.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102381993 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="按钮_退出" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="退出">
+            <g id="形状" fill-rule="nonzero">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#505050" xlink:href="#path-1"></use>
+            </g>
+            <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,53 @@
+.cell {
+  display: inline-block;
+  width: 14.2857%;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  height: 21px;
+  line-height: 21px;
+  font-variant: normal;
+}
+
+.other {
+  //color: @black-3;
+  cursor: default;
+}
+
+.title {
+  font-weight: bold;
+  cursor: default;
+}
+
+.current {
+  background-color: red;
+  color: white;
+  border-radius: 21px;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+}
+
+.workday:not(.other) {
+  color: black;
+  font-weight: bold;
+}
+
+.header {
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+  i {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  span {
+    display: inline-block;
+    width: 164px;
+    text-align: center;
+  }
+}

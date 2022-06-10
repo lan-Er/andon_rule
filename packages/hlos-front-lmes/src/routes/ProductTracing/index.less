@@ -1,0 +1,173 @@
+.lmes-product-tracing-header {
+  padding: 8px 16px;
+  background: #fff;
+}
+.lmes-product-tracing-content {
+  padding: 8px !important;
+  margin: 0 !important;
+  background: #f4f5f7 !important;
+  :global {
+    .c7n-pro-form {
+      width: calc(100% - 150px);
+      .c7n-pro-field-wrapper {
+        padding-right: 0.1rem;
+      }
+    }
+    .ant-tree-node-content-wrapper {
+      width: 90%;
+      height: 24px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .ant-tree-node-selected {
+      background: #386bd7 !important;
+      .ant-tree-title {
+        color: #fff !important;
+      }
+    }
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+      background: #f4f5f7;
+    }
+    .ant-tree-switcher::after {
+      color: #000;
+    }
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+      &.ant-tree-switcher_open:after,  &.ant-tree-switcher_close:after, &.ant-tree-switcher-noop:after{
+        font-size: 14px;
+      }
+    }
+  }
+  .lmes-product-tracing-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 0.1rem;
+    background: #fff;
+  }
+  .tree-detail-wrapper {
+    display: flex;
+    .tree-wrapper {
+      width: 25%;
+      overflow-x: auto;
+      .expand-collapse-btn {
+        display: flex;
+        > div {
+          width: 50%;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+      }
+    }
+    .detail-wrapper {
+      width: 75%;
+      padding: 16px;
+      background: #fff;
+      .item-info {
+        width: 100%;
+        border-bottom: 1px solid #e7e7e7;
+        > div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          .item {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+          }
+          .item + .item {
+            margin-left: 8px;
+          }
+          .tag {
+            margin-left: 24px;
+            font-size: 14px;
+            line-height: 14px;
+            color: #386bd7;
+          }
+        }
+        // .lot-gropup {
+        //   > div {
+        //     width: 33.3%;
+        //     display: flex;
+        //     align-items: center;
+        //     .lot-label {
+        //       color: #666;
+        //       margin: 0 8px 0 4px;
+        //     }
+        //   }
+        // }
+      }
+      .lifecycle-node {
+        margin-top: 24px;
+        .time {
+          line-height: 22px;
+          margin-bottom: 4px;
+        }
+        .lifecycle-node-content {
+          display: grid;
+          grid-template-columns: 14.3% auto 30% 25.2%;
+          padding: 10px;
+          background: #f9f9f9;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 50%;
+          }
+          > div {
+            div {
+              line-height: 22px;
+              span {
+                color: #666;
+              }
+            }
+          }
+          > div:last-child {
+            text-align: right;
+            .mo {
+              color: #386bd7;
+            }
+            .doc-type {
+              display: inline-block;
+              margin-left: 8px;
+              padding: 3px 6px;
+              background: #e3f2fd;
+              border-radius: 4px;
+              color: #039be5;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.lmes-product-tracing-history-modal {
+  .history-header {
+    display: flex;
+    align-items: center;
+    > div {
+      width: 50%;
+    }
+    .history-header-label {
+      color: #666;
+      margin-right: 16px;
+    }
+  }
+  .history-list {
+    .history-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #d9d3d3;
+      margin-top: 16px;
+      padding: 10px 24px;
+      cursor: pointer;
+      &.history-list-item-active {
+        background: rgba(0, 176, 167, 0.07);
+        border: 1px solid #00b0a7;
+      }
+    }
+  }
+}

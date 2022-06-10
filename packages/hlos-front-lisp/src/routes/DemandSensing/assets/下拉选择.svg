@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>下拉选择</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="5 5.20710678 0.610912703 0.818019485 1.31801948 0.110912703 5.00255623 3.79033699 8.64644661 0.146446609 9.35355339 0.853553391"></polygon>
+    </defs>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="需求感知补货分析" transform="translate(-1406.000000, -617.000000)">
+            <g id="编组-11" transform="translate(208.000000, 590.000000)">
+                <g id="编组-9" transform="translate(16.000000, 16.000000)">
+                    <g id="下拉选择" transform="translate(1182.000000, 11.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Path-2" fill="#9B9B9B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

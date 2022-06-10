@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="354px" height="408px" viewBox="0 0 354 408" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>框1</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="97.1571484%" id="linearGradient-1">
+            <stop stop-color="#3CADD9" stop-opacity="0.286604021" offset="0%"></stop>
+            <stop stop-color="#3CADD9" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-20.000000, -109.000000)">
+            <g id="框1" transform="translate(20.000000, 110.000000)">
+                <polygon id="Stroke-2" stroke-opacity="0.33088396" stroke="#FFFFFF" stroke-width="0.71344" points="8.3274 -3.35422702e-13 337.78184 -3.35422702e-13 337.78184 15.65424 353.43636 15.65424 353.43636 383 331.262531 406.07204 157.16308 406.07204 8.3274 406.07204 0.5 406.07204 0.5 387.79864 0.5 6.39268 0.5 -3.35422702e-13"></polygon>
+                <polygon id="Stroke-2" fill="url(#linearGradient-1)" points="7.8274 -3.35422702e-13 337.28184 -3.35422702e-13 337.28184 15.65424 352.93636 15.65424 352.93636 383 330.762531 406.07204 156.66308 406.07204 7.8274 406.07204 -1.42108547e-13 406.07204 -1.42108547e-13 387.79864 -1.42108547e-13 6.39268 -1.42108547e-13 -3.35422702e-13"></polygon>
+                <polygon id="Fill-10" fill-opacity="0.359238418" fill="#FFFFFF" points="325.5 9 328.5 9 328.5 6 325.5 6"></polygon>
+                <polygon id="Fill-10备份-4" fill-opacity="0.359238418" fill="#FFFFFF" points="325.5 395 328.5 395 328.5 392 325.5 392"></polygon>
+                <polygon id="Fill-10备份-2" fill-opacity="0.359238418" fill="#FFFFFF" points="9.5 9 12.5 9 12.5 6 9.5 6"></polygon>
+                <polygon id="Fill-10备份-5" fill-opacity="0.359238418" fill="#FFFFFF" points="9.5 395 12.5 395 12.5 392 9.5 392"></polygon>
+                <polygon id="Fill-10备份" fill-opacity="0.359238418" fill="#FFFFFF" points="343.5 24 346.5 24 346.5 21 343.5 21"></polygon>
+                <polygon id="Fill-10备份-3" fill-opacity="0.359238418" fill="#FFFFFF" points="343.5 380 346.5 380 346.5 377 343.5 377"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

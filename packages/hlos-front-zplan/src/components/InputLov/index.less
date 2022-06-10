@@ -1,0 +1,53 @@
+.zcom-input-lov {
+  position: relative;
+  :global {
+    .c7n-pro-btn {
+      border: none;
+      position: absolute;
+      right: 0;
+    }
+    .c7n-pro-input-wrapper {
+      width: 100%;
+    }
+    .c7n-pro-btn-default.c7n-pro-btn-raised:disabled {
+      border: none;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9;
+      background-color: #f5f5f5;
+      // border: 0.01rem solid rgba(0, 0, 0, 0.2);
+      border-radius: 0 4px 4px 0;
+      border-left: none;
+      opacity: 1;
+      cursor: not-allowed;
+      &:before {
+        background-color: #f5f5f5;
+      }
+      i:before {
+        content: '\E670';
+        display: block;
+        font-family: anticon, sans-serif;
+        color: rgba(0, 0, 0, 0.25);
+        font-size: 12px;
+        position: relative;
+      }
+    }
+  }
+
+  .zcom-input-lov-button {
+    border: none !important;
+    position: absolute !important;
+    right: 0;
+    color: rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    i:before {
+      content: '\E670';
+      display: block;
+      font-family: anticon, sans-serif;
+      color: rgba(0, 0, 0, 0.25);
+      font-size: 12px;
+      position: relative;
+    }
+  }
+}

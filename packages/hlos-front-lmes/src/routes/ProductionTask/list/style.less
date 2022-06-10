@@ -1,0 +1,51 @@
+.lmes-production-task-content {
+  :global {
+    .c7n-pro-select-multiple {
+      .c7n-pro-select {
+        > ul {
+          width: 100%;
+          height: 28px;
+          overflow: hidden;
+        }
+      }
+      .c7n-pro-select-multiple .c7n-pro-select:not(:last-child) {
+        padding-right: 0;
+      }
+    }
+    .c7n-pro-field-label,
+    .c7n-pro-field-wrapper {
+      padding-top: 0 !important;
+    }
+    .c7n-pro-pagination {
+      text-align: right;
+    }
+  }
+}
+
+.production-task-adjust-hour-modal {
+  width: 64%;
+  :global {
+    .c7n-pro-modal-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+    }
+  }
+  .adjust-hour-line {
+    height: 40px;
+    background-color: #F7F7F7;
+    display: grid;
+    grid-template-columns: 18% 18% 1fr 18% 18%;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+    padding: 0 10px;
+    margin-bottom: 16px;
+    span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

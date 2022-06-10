@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>延交</title>
+    <g id="供应总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="供应总览备份" transform="translate(-1368.000000, -540.000000)" fill="#4DB7FA" fill-rule="nonzero">
+            <g id="Group-47备份-9" transform="translate(1281.000000, 532.000000)">
+                <g id="Group-12">
+                    <g id="编组-5">
+                        <g id="路径">
+                            <g id="编组-16" transform="translate(87.000000, 8.000000)">
+                                <path d="M19.5,6 C11.4898485,6 5,12.4898485 5,20.5 C5,28.5101515 11.4898485,35 19.5,35 C27.5101515,35 34,28.5101515 34,20.5 C34,12.4898485 27.5101515,6 19.5,6 Z M24.8562121,27.099697 L18.6212121,20.864697 L18.6212121,9.65136363 L20.3787879,9.65136363 L20.3787879,20.139697 L26.099697,25.860606 L24.8562121,27.099697 L24.8562121,27.099697 Z" id="形状"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

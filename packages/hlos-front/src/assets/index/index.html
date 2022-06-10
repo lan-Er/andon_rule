@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>img</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #icons {
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 16px; */
+    padding: 16px;
+    overflow: hidden;
+    background-color: #ccc;
+  }
+  .icon-item {
+    width: calc(12.5% - 28px);
+    height: 150px;
+    float: left;
+    margin: 0 16px 16px 0;
+    padding: 0 5px;
+    text-align: center;
+    border: 1px solid #000;
+  }
+  p {
+    height: 50px;
+  }
+  img {
+    width: 40px;
+    height: 40px;
+  }
+</style>
+<script>
+  window.onload=function(){
+    const imgArr = [
+      // icon
+      {
+        title: 'icons/amount-center.svg',
+        url: '../icons/amount-center.svg',
+      },
+      {
+        title: 'icons/amount-left.svg',
+        url: '../icons/amount-left.svg',
+      },
+      {
+        title: 'icons/amount-right.svg',
+        url: '../icons/amount-right.svg',
+      },
+      {
+        title: 'icons/asc.svg',
+        url: '../icons/asc.svg',
+      },
+      {
+        title: 'icons/blue-semi-circle.svg',
+        url: '../icons/blue-semi-circle.svg',
+      },
+      {
+        title: 'icons/cancel.svg',
+        url: '../icons/cancel.svg',
+      },
+      {
+        title: 'icons/capacity.svg',
+        url: '../icons/capacity.svg',
+      },
+      {
+        title: 'icons/car.svg',
+        url: '../icons/car.svg',
+      },
+      {
+        title: 'icons/car-gray.svg',
+        url: '../icons/car-gray.svg',
+      },
+      {
+        title: 'icons/change.svg',
+        url: '../icons/change.svg',
+      },
+      {
+        title: 'icons/check.svg',
+        url: '../icons/check.svg',
+      },
+      {
+        title: 'icons/circle.svg',
+        url: '../icons/circle.svg',
+      },
+      {
+        title: 'icons/circle-check.svg',
+        url: '../icons/circle-check.svg',
+      },
+      {
+        title: 'icons/classess.svg',
+        url: '../icons/classess.svg',
+      },
+      {
+        title: 'icons/classess-gray.svg',
+        url: '../icons/classess-gray.svg',
+      },
+      {
+        title: 'icons/clock-gray.svg',
+        url: '../icons/clock-gray.svg',
+      },
+      {
+        title: 'icons/clock.svg',
+        url: '../icons/clock.svg',
+      },
+      {
+        title: 'icons/component.svg',
+        url: '../icons/component.svg',
+      },
+      {
+        title: 'icons/copy-icon.svg',
+        url: '../icons/copy-icon.svg',
+      },
+      {
+        title: 'icons/copy.svg',
+        url: '../icons/copy.svg',
+      },
+      {
+        title: 'icons/cube-blue.svg',
+        url: '../icons/cube-blue.svg',
+      },
+      {
+        title: 'icons/cube.svg',
+        url: '../icons/cube.svg',
+      },
+      {
+        title: 'icons/date-icon.svg',
+        url: '../icons/date-icon.svg',
+      },
+      {
+        title: 'icons/date.svg',
+        url: '../icons/date.svg',
+      },
+      {
+        title: 'icons/delete-button.svg',
+        url: '../icons/delete-button.svg',
+      },
+      {
+        title: 'icons/delete.svg',
+        url: '../icons/delete.svg',
+      },
+      {
+        title: 'icons/department.svg',
+        url: '../icons/department.svg',
+      },
+      {
+        title: 'icons/desc.svg',
+        url: '../icons/desc.svg',
+      },
+      {
+        title: 'icons/detail-btn.svg',
+        url: '../icons/detail-btn.svg',
+      },
+      {
+        title: 'icons/doc-icon.svg',
+        url: '../icons/doc-icon.svg',
+      },
+      {
+        title: 'icons/document-type.svg',
+        url: '../icons/document-type.svg',
+      },
+      {
+        title: 'icons/document.svg',
+        url: '../icons/document.svg',
+      },
+      {
+        title: 'icons/down-blue.svg',
+        url: '../icons/down-blue.svg',
+      },
+      {
+        title: 'icons/down.svg',
+        url: '../icons/down.svg',
+      },
+      {
+        title: 'icons/down-white.svg',
+        url: '../icons/down-white.svg',
+      },
+      {
+        title: 'icons/edit-icon.svg',
+        url: '../icons/edit-icon.svg',
+      },
+      {
+        title: 'icons/edit.svg',
+        url: '../icons/edit.svg',
+      },
+      {
+        title: 'icons/employee-performance.svg',
+        url: '../icons/employee-performance.svg',
+      },
+      {
+        title: 'icons/exit.svg',
+        url: '../icons/exit.svg',
+      },
+      {
+        title: 'icons/expand.svg',
+        url: '../icons/expand.svg',
+      },
+      {
+        title: 'icons/fail.png',
+        url: '../icons/fail.png',
+      },
+      {
+        title: 'icons/filter-btn.svg',
+        url: '../icons/filter-btn.svg',
+      },
+      {
+        title: 'icons/green-semi-circle.svg',
+        url: '../icons/green-semi-circle.svg',
+      },
+      {
+        title: 'icons/history.svg',
+        url: '../icons/history.svg',
+      },
+      {
+        title: 'icons/icon_page_wrong.svg',
+        url: '../icons/icon_page_wrong.svg',
+      },
+      {
+        title: 'icons/icon_production line.png',
+        url: '../icons/icon_production line.png',
+      },
+      {
+        title: 'icons/insert.svg',
+        url: '../icons/insert.svg',
+      },
+      {
+        title: 'icons/image-paper.svg',
+        url: '../icons/image-paper.svg',
+      },
+      {
+        title: 'icons/image.svg',
+        url: '../icons/image.svg',
+      },
+      {
+        title: 'icons/input-suffix.svg',
+        url: '../icons/input-suffix.svg',
+      },
+      {
+        title: 'icons/inspect.svg',
+        url: '../icons/inspect.svg',
+      },
+      {
+        title: 'icons/inspection-group.svg',
+        url: '../icons/inspection-group.svg',
+      },
+      {
+        title: 'icons/inspection-item.svg',
+        url: '../icons/inspection-item.svg',
+      },
+      {
+        title: 'icons/inspector.svg',
+        url: '../icons/inspector.svg',
+      },
+      {
+        title: 'icons/issue.svg',
+        url: '../icons/issue.svg',
+      },
+      {
+        title: 'icons/item-icon.svg',
+        url: '../icons/item-icon.svg',
+      },
+      {
+        title: 'icons/item-icon1.svg',
+        url: '../icons/item-icon1.svg',
+      },
+      {
+        title: 'icons/item-icon2.svg',
+        url: '../icons/item-icon2.svg',
+      },
+      {
+        title: 'icons/item.svg',
+        url: '../icons/item.svg',
+      },
+      {
+        title: 'icons/judge-result.svg',
+        url: '../icons/judge-result.svg',
+      },
+      {
+        title: 'icons/location-gray.svg',
+        url: '../icons/location-gray.svg',
+      },
+      {
+        title: 'icons/location.svg',
+        url: '../icons/location.svg',
+      },
+      {
+        title: 'icons/lock.svg',
+        url: '../icons/lock.svg',
+      },
+      {
+        title: 'icons/lot-icon.svg',
+        url: '../icons/lot-icon.svg',
+      },
+      {
+        title: 'icons/lot-selected.svg',
+        url: '../icons/lot-selected.svg',
+      },
+      {
+        title: 'icons/lot-unselect.svg',
+        url: '../icons/lot-unselect.svg',
+      },
+      {
+        title: 'icons/me-ou-icon.svg',
+        url: '../icons/me-ou-icon.svg',
+      },
+      {
+        title: 'icons/me-ou.svg',
+        url: '../icons/me-ou.svg',
+      },
+      {
+        title: 'icons/metral.svg',
+        url: '../icons/metral.svg',
+      },
+      {
+        title: 'icons/mo-return-item.svg',
+        url: '../icons/mo-return-item.svg',
+      },
+      {
+        title: 'icons/model.svg',
+        url: '../icons/model.svg',
+      },
+      {
+        title: 'icons/more-btn.svg',
+        url: '../icons/more-btn.svg',
+      },
+      {
+        title: 'icons/NO.svg',
+        url: '../icons/NO.svg',
+      },
+      {
+        title: 'icons/notice.svg',
+        url: '../icons/notice.svg',
+      },
+      {
+        title: 'icons/number-selected.svg',
+        url: '../icons/number-selected.svg',
+      },
+      {
+        title: 'icons/number-unselect.svg',
+        url: '../icons/number-unselect.svg',
+      },
+      {
+        title: 'icons/odd-number.svg',
+        url: '../icons/odd-number.svg',
+      },
+      {
+        title: 'icons/operation.svg',
+        url: '../icons/operation.svg',
+      },
+      {
+        title: 'icons/operation-gray.svg',
+        url: '../icons/operation-gray.svg',
+      },
+      {
+        title: 'icons/orange-semi-circle.svg',
+        url: '../icons/orange-semi-circle.svg',
+      },
+      {
+        title: 'icons/order-icon.svg',
+        url: '../icons/order-icon.svg',
+      },
+      {
+        title: 'icons/order-icon2.svg',
+        url: '../icons/order-icon2.svg',
+      },
+      {
+        title: 'icons/order-icon3.svg',
+        url: '../icons/order-icon3.svg',
+      },
+      {
+        title: 'icons/order.svg',
+        url: '../icons/order.svg',
+      },
+      {
+        title: 'icons/org-icon.svg',
+        url: '../icons/org-icon.svg',
+      },
+      {
+        title: 'icons/org.svg',
+        url: '../icons/org.svg',
+      },
+      {
+        title: 'icons/out.svg',
+        url: '../icons/out.svg',
+      },
+      {
+        title: 'icons/pass-number.svg',
+        url: '../icons/pass-number.svg',
+      },
+      {
+        title: 'icons/pass.png',
+        url: '../icons/pass.png',
+      },
+      {
+        title: 'icons/pause.svg',
+        url: '../icons/pause.svg',
+      },
+      {
+        title: 'icons/pin.svg',
+        url: '../icons/pin.svg',
+      },
+      {
+        title: 'icons/pqc.svg',
+        url: '../icons/pqc.svg',
+      },
+      {
+        title: 'icons/procedure.svg',
+        url: '../icons/procedure.svg',
+      },
+      {
+        title: 'icons/processor.svg',
+        url: '../icons/processor.svg',
+      },
+      {
+        title: 'icons/prodline.svg',
+        url: '../icons/prodline.svg',
+      },
+      {
+        title: 'icons/prodline-gray.svg',
+        url: '../icons/prodline-gray.svg',
+      },
+      {
+        title: 'icons/qi.svg',
+        url: '../icons/qi.svg',
+      },
+      {
+        title: 'icons/quantity.svg',
+        url: '../icons/quantity.svg',
+      },
+      {
+        title: 'icons/reason.svg',
+        url: '../icons/reason.svg',
+      },
+      {
+        title: 'icons/rec-lot.svg',
+        url: '../icons/rec-lot.svg',
+      },
+      {
+        title: 'icons/rec-quantity.svg',
+        url: '../icons/rec-quantity.svg',
+      },
+      {
+        title: 'icons/rec-tag.svg',
+        url: '../icons/rec-tag.svg',
+      },
+      {
+        title: 'icons/remark.svg',
+        url: '../icons/remark.svg',
+      },
+      {
+        title: 'icons/remark2.svg',
+        url: '../icons/remark2.svg',
+      },
+      {
+        title: 'icons/remark3.svg',
+        url: '../icons/remark3.svg',
+      },
+      {
+        title: 'icons/reset.svg',
+        url: '../icons/reset.svg',
+      },
+      {
+        title: 'icons/resource-plan-remind1.svg',
+        url: '../icons/resource-plan-remind1.svg',
+      },
+      {
+        title: 'icons/resource-plan-remind2.svg',
+        url: '../icons/resource-plan-remind2.svg',
+      },
+      {
+        title: 'icons/resource-plan-remind3.svg',
+        url: '../icons/resource-plan-remind3.svg',
+      },
+      {
+        title: 'icons/resource-plan-remind4.svg',
+        url: '../icons/resource-plan-remind4.svg',
+      },
+      {
+        title: 'icons/result.svg',
+        url: '../icons/result.svg',
+      },
+      {
+        title: 'icons/return.svg',
+        url: '../icons/return.svg',
+      },
+      {
+        title: 'icons/revert.svg',
+        url: '../icons/revert.svg',
+      },
+      {
+        title: 'icons/routing-document.svg',
+        url: '../icons/routing-document.svg',
+      },
+      {
+        title: 'icons/scan.svg',
+        url: '../icons/scan.svg',
+      },
+      {
+        title: 'icons/search.png',
+        url: '../icons/search.png',
+      },
+      {
+        title: 'icons/seat-icon.svg',
+        url: '../icons/seat-icon.svg',
+      },
+      {
+        title: 'icons/select.svg',
+        url: '../icons/select.svg',
+      },
+      {
+        title: 'icons/send.svg',
+        url: '../icons/send.svg',
+      },
+      {
+        title: 'icons/send2.svg',
+        url: '../icons/send2.svg',
+      },
+      {
+        title: 'icons/ship-detail.svg',
+        url: '../icons/ship-detail.svg',
+      },
+      {
+        title: 'icons/sort-down.svg',
+        url: '../icons/sort-down.svg',
+      },
+      {
+        title: 'icons/sort-up.svg',
+        url: '../icons/sort-up.svg',
+      },
+      {
+        title: 'icons/source-biao.svg',
+        url: '../icons/source-biao.svg',
+      },
+      {
+        title: 'icons/source-star.svg',
+        url: '../icons/source-star.svg',
+      },
+      {
+        title: 'icons/source.svg',
+        url: '../icons/source.svg',
+      },
+      {
+        title: 'icons/source1.svg',
+        url: '../icons/source1.svg',
+      },
+      {
+        title: 'icons/source4.svg',
+        url: '../icons/source4.svg',
+      },
+      {
+        title: 'icons/start.svg',
+        url: '../icons/start.svg',
+      },
+      {
+        title: 'icons/submit.svg',
+        url: '../icons/submit.svg',
+      },
+      {
+        title: 'icons/supplier-card.svg',
+        url: '../icons/supplier-card.svg',
+      },
+      {
+        title: 'icons/supplier.svg',
+        url: '../icons/supplier.svg',
+      },
+      {
+        title: 'icons/switch-reoprt.svg',
+        url: '../icons/switch-reoprt.svg',
+      },
+      {
+        title: 'icons/switch-reurn.svg',
+        url: '../icons/switch-reurn.svg',
+      },
+      {
+        title: 'icons/tag-icon.svg',
+        url: '../icons/tag-icon.svg',
+      },
+      {
+        title: 'icons/tag-selected.svg',
+        url: '../icons/tag-selected.svg',
+      },
+      {
+        title: 'icons/tag-unselect.svg',
+        url: '../icons/tag-unselect.svg',
+      },
+      {
+        title: 'icons/team.svg',
+        url: '../icons/team.svg',
+      },
+      {
+        title: 'icons/triangle1.svg',
+        url: '../icons/triangle1.svg',
+      },
+      {
+        title: 'icons/triangle2.svg',
+        url: '../icons/triangle2.svg',
+      },
+      {
+        title: 'icons/un-lock.svg',
+        url: '../icons/un-lock.svg',
+      },
+      {
+        title: 'icons/up-blue.svg',
+        url: '../icons/up-blue.svg',
+      },
+      {
+        title: 'icons/up.svg',
+        url: '../icons/up.svg',
+      },
+      {
+        title: 'icons/user.svg',
+        url: '../icons/user.svg',
+      },
+      {
+        title: 'icons/warehouse.svg',
+        url: '../icons/warehouse.svg',
+      },
+      {
+        title: 'icons/wm-area.svg',
+        url: '../icons/wm-area.svg',
+      },
+      {
+        title: 'icons/work-type.svg',
+        url: '../icons/work-type.svg',
+      },
+      {
+        title: 'icons/workcell.svg',
+        url: '../icons/workcell.svg',
+      },
+      {
+        title: 'icons/worker-icon.svg',
+        url: '../icons/worker-icon.svg',
+      },
+      {
+        title: 'icons/worker-number.svg',
+        url: '../icons/worker-number.svg',
+      },
+      {
+        title: 'icons/yellow-semi-circle.svg',
+        url: '../icons/yellow-semi-circle.svg',
+      },
+      {
+        title: 'icons/left-blue.svg',
+        url: '../icons/left-blue.svg',
+      },
+      {
+        title: 'icons/right-blue.svg',
+        url: '../icons/right-blue.svg',
+      },
+      {
+        title: 'icons/add-blue.svg',
+        url: '../icons/add-blue.svg',
+      },
+      {
+        title: 'icons/arrow-left-blue.svg',
+        url: '../icons/arrow-left-blue.svg',
+      },
+      {
+        title: 'icons/arrow-right-blue.svg',
+        url: '../icons/arrow-right-blue.svg',
+      },
+      {
+        title: 'icons/arrow-left-forbidden.svg',
+        url: '../icons/arrow-left-forbidden.svg',
+      },
+      {
+        title: 'icons/arrow-right-forbidden.svg',
+        url: '../icons/arrow-right-forbidden.svg',
+      },
+      {
+        title: 'icons/query.svg',
+        url: '../icons/query.svg',
+      },
+      {
+        title: 'icons/worker-group.svg',
+        url: '../icons/worker-group.svg',
+      },
+      {
+        title: 'icons/more.svg',
+        url: '../icons/more.svg',
+      },
+      {
+        title: 'icons/arrow-left-white.svg',
+        url: '../icons/arrow-left-white.svg',
+      },
+      {
+        title: 'icons/check-circle.svg',
+        url: '../icons/check-circle.svg',
+      },
+      {
+        title: 'icons/cube-middle.svg',
+        url: '../icons/cube-middle.svg',
+      },
+      {
+        title: 'icons/document-grey.svg',
+        url: '../icons/document-grey.svg',
+      },
+      {
+        title: 'icons/edit-grey.svg',
+        url: '../icons/edit-grey.svg',
+      },
+      {
+        title: 'icons/give-in.svg',
+        url: '../icons/give-in.svg',
+      },
+      {
+        title: 'icons/hide.svg',
+        url: '../icons/hide.svg',
+      },
+      {
+        title: 'icons/inspection-item-grey.svg',
+        url: '../icons/inspection-item-grey.svg',
+      },
+      {
+        title: 'icons/message.svg',
+        url: '../icons/message.svg',
+      },
+      {
+        title: 'icons/qualified.svg',
+        url: '../icons/qualified.svg',
+      },
+      {
+        title: 'icons/unqualified.svg',
+        url: '../icons/unqualified.svg',
+      },
+      {
+        title: 'icons/select-orange.svg',
+        url: '../icons/select-orange.svg',
+      },
+      {
+        title: 'icons/supplier-grey.svg',
+        url: '../icons/supplier-grey.svg',
+      },
+      {
+        title: 'icons/triangle-green.svg',
+        url: '../icons/triangle-green.svg',
+      },
+      {
+        title: 'icons/triangle-orange.svg',
+        url: '../icons/triangle-orange.svg',
+      },
+      {
+        title: 'icons/triangle-yellow.svg',
+        url: '../icons/triangle-yellow.svg',
+      },
+
+      // 图片
+      {
+        title: 'baidu.png',
+        url: '../baidu.png',
+      },
+      {
+        title: 'dashboard-header.png',
+        url: '../dashboard-header.png',
+      },
+      {
+        title: 'green-andon.png',
+        url: '../green-andon.png',
+      },
+      {
+        title: 'home.png',
+        url: '../home.png',
+      },
+      {
+        title: 'img-default-avator.png',
+        url: '../img-default-avator.png',
+      },
+      {
+        title: 'key-user.png',
+        url: '../key-user.png',
+      },
+      {
+        title: 'onestep-img.png',
+        url: '../onestep-img.png',
+      },
+      {
+        title: 'onestep.png',
+        url: '../onestep.png',
+      },
+      {
+        title: 'pending.png',
+        url: '../pending.png',
+      },
+      {
+        title: 'read-to-go.png',
+        url: '../read-to-go.png',
+      },
+      {
+        title: 'red-andon.png',
+        url: '../red-andon.png',
+      },
+      {
+        title: 'sent.png',
+        url: '../sent.png',
+      },
+      {
+        title: 'square@2x.png',
+        url: '../square@2x.png',
+      },
+      {
+        title: 'total.png',
+        url: '../total.png',
+      },
+      {
+        title: 'trapezoid-bottom.png',
+        url: '../trapezoid-bottom.png',
+      },
+      {
+        title: 'yellow-andon.png',
+        url: '../yellow-andon.png',
+      },
+      {
+        title: 'total.png',
+        url: '../total.png',
+      },
+    ];
+    const icons = document.getElementById('icons');
+    imgArr.map(i => {
+      const itemEle = document.createElement('div');
+      itemEle.setAttribute('class', 'icon-item');
+      icons.appendChild(itemEle);
+      const titleEle = document.createElement('p');
+      titleEle.innerText = i.title;
+      itemEle.appendChild(titleEle);
+      const imgEle = document.createElement('img');
+      imgEle.setAttribute("src", i.url);
+      itemEle.appendChild(imgEle);
+    });
+  };
+</script>
+<body>
+  <div id="icons">
+  </div>
+</body>
+</html>

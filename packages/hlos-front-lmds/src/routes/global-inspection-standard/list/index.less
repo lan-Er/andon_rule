@@ -1,0 +1,84 @@
+div::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+div::-webkit-scrollbar-track {
+  background: rgb(239, 239, 239);
+  border-radius: 2px;
+}
+div::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 10px;
+}
+div::-webkit-scrollbar-thumb:hover {
+  background: #9b9b9b;
+}
+
+.ds-jc-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lmds-inspection-standard {
+  height: 100vh;
+  overflow: hidden;
+  .inspection-standard-content {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    background-color: #fff;
+    margin: 8px;
+    height: calc(100vh - 148px);
+    .left {
+      font-size: 12px;
+      border-right: 1px solid #ededed;
+      height: 100%;
+      overflow: auto;
+      .title {
+        color: #666;
+        font-weight: 500;
+        padding-top: 16px;
+        padding-bottom: 8px;
+        text-align: right;
+        padding-right: 20%;
+        position: sticky;
+        top: 0px;
+        background-color: #fff;
+      }
+      p {
+        color: #666;
+        padding: 8px 0;
+        text-align: right;
+        margin: 0;
+        padding-right: 20%;
+        cursor: pointer;
+        &.active {
+          background: rgba(0, 179, 169, 0.08);
+          color: #00b3a9;
+        }
+      }
+    }
+    .right {
+      box-sizing: border-box;
+      padding: 16px 16px 0;
+      height: 100%;
+      :global {
+        .c7n-pro-pagination {
+          text-align: right;
+        }
+        .c7n-performance-table-cell-content {
+          display: flex;
+          align-items: center;
+          .c7n-pro-input-wrapper {
+            width: 100%;
+          }
+        }
+        .c7n-performance-table-cell-last {
+          .c7n-performance-table-cell-content {
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+  }
+}

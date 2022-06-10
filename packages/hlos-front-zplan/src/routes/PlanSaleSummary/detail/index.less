@@ -1,0 +1,51 @@
+.zplan-sales-summary {
+  .zplan-sales-summary-headInfo {
+    height: 40px;
+    line-height: 40px;
+    background: rgb(242, 242, 242);
+    font-size: 14px;
+    padding-left: 10px;
+    margin-top: 15px;
+    .headInfo-toggle {
+      color: #29bece;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+  .zplan-sales-summary-query {
+    :global {
+      .c7n-pro-form > table > tbody > tr > td {
+        vertical-align: middle;
+      }
+    }
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    .query-btns {
+      display: flex;
+      margin: 12px 0 0 8px;
+    }
+  }
+  :global {
+    .c7n-pro-output-wrapper {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.zplan-sales-summary-modal {
+  :global {
+    .c7n-pro-select {
+      > ul {
+        width: 100%;
+        height: 28px;
+        overflow: hidden;
+      }
+    }
+    .c7n-pro-select-multiple .c7n-pro-select:not(:last-child) {
+      padding-right: 0;
+    }
+  }
+}

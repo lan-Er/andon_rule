@@ -1,0 +1,38 @@
+.my-content-center-position {
+  height: 432px;
+  width: 100%;
+  .my-content-center-map {
+    width: 100%;
+    height: 391px;
+    overflow: hidden;
+  }
+  .my-content-map-bottom-list {
+    width: 100%;
+    height: calc(100% - 391px);
+    display: table;
+    .my-content-map-bottom-all {
+      display: table-cell;
+      overflow: hidden;
+      > div {
+        float: left;
+        width: 50%;
+      }
+      > div:nth-child(1) {
+        text-align: right;
+      }
+      > div:nth-child(2) {
+        text-align: left;
+        padding-left: 8px;
+        box-sizing: border-box;
+        > div {
+          font-size: 12px;
+          color: #50ceff;
+        }
+        span {
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

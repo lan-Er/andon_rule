@@ -1,0 +1,51 @@
+.mo-info {
+  height: 92px;
+  margin: 8px 0 16px;
+  padding: 8px 16px 16px;
+  box-sizing: border-box;
+  background: #fbfbfb;
+  border: 1px solid #e7e7e7;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  .info-top {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    > div:first-child {
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      font-weight: 500;
+      font-size: 24px;
+    }
+    .type {
+      margin-left: 16px;
+      font-size: 16px;
+      color: #3b87f5;
+    }
+    // .status {
+    //   padding: 2px 7px;
+    //   color: #558b2f;
+    //   border: 1px solid #558b2f;
+    //   box-sizing: border-box;
+    //   border-radius: 2px;
+    // }
+  }
+  .info-bottom {
+    font-size: 12px;
+    > div {
+      display: flex;
+      align-items: center;
+      .label {
+        margin-left: 4px;
+        margin-right: 12px;
+        color: #666;
+      }
+    }
+    > div + div {
+      margin-left: 56px;
+    }
+  }
+}

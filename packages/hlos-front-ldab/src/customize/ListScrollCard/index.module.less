@@ -1,0 +1,57 @@
+.my-card-scroll-list {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #182534;
+  color: #fff;
+  .my-card-scroll-list {
+    width: 100%;
+  }
+  .my-card-scroll-title {
+    display: flex;
+    span {
+      flex: 1;
+      text-align: center;
+      line-height: 1vh;
+      height: 1vh;
+    }
+  }
+  .my-card-scroll-list {
+    height: 100%;
+    .my-card-title {
+      position: relative;
+      height: 1vh;
+    }
+    .my-scroll-content {
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 1vh);
+      left: 0;
+      overflow: hidden;
+    }
+    ul {
+      list-style: none;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 100%;
+        display: flex;
+        span {
+          flex: 1;
+          text-align: center;
+          line-height: 26px;
+        }
+      }
+      li:nth-child(even) {
+        background: rgba(4, 128, 124, 0.3);
+      }
+    }
+    .my-card-title {
+      li {
+        background: rgba(4, 128, 124, 0.3);
+      }
+    }
+  }
+}

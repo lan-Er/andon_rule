@@ -1,0 +1,44 @@
+.lwms-ship-return-create {
+  .rule-line {
+    position: relative;
+  }
+  .table-wrapper {
+    display: flex;
+    .table-item {
+      width: calc(50% - 4px);
+      > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .table-item + .table-item {
+      margin-left: 8px;
+    }
+    .table-item-hide:first-child {
+      width: 200px;
+    }
+    .table-item-hide:last-child {
+      width: calc(100% - 208px);
+    }
+    :global {
+      .ant-table-row {
+        height: 39px;
+      }
+      .ant-table-scroll {
+        overflow-x: auto;
+      }
+      .ant-table-empty .ant-table-body {
+        overflow: initial !important;
+      }
+      .ant-table-placeholder {
+        padding: 0.1rem;
+        color: #333;
+      }
+    }
+  }
+}

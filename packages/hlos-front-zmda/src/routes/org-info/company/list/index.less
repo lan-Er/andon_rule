@@ -1,0 +1,28 @@
+.zmda-company-form {
+  :global {
+    tbody {
+      tr:nth-child(1) {
+        td:nth-child(1) {
+          display: none;
+        }
+      }
+      tr {
+        td:nth-child(3) {
+          display: none;
+        }
+      }
+      tr:last-child {
+        .c7n-pro-field-wrapper {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+.zmda-company-modal {
+  :global {
+    .c7n-pro-modal-body {
+      max-height: calc(100vh - 0.55rem)
+    }
+  }
+}

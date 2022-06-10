@@ -1,0 +1,79 @@
+@import './index.module.less';
+//@calendars-height : calc(100vh - @layout-header-height - @header-height);
+.calendars {
+  //height: @calendars-height;
+  position: relative;
+  //>div {
+  //  position: absolute !important;
+  //}
+}
+
+.calendar {
+  padding: 12px;
+  border: none;
+  user-select: none;
+  >div {
+    //border: @border;
+  }
+  :global {
+    .c7n-row {
+      margin: -1px 0 0 -1px;
+      >div {
+        box-shadow: 1px 0 0 0 #e8e8e8, 0 1px 0 0 #e8e8e8, 1px 1px 0 0 #e8e8e8, inset 1px 0 0 0 #e8e8e8, inset 0 1px 0 0 #e8e8e8;
+        transition: box-shadow 0.3s;
+        &:hover {
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          :local {
+            .calendar-header {
+              background-color: rgba(65, 232, 5, 0.35);
+            }
+          }
+        }
+      }
+    }
+  }
+  .calendar-wrapper {
+    .calendar-header {
+      position: relative;
+      transition: background-color 0.3s;
+      padding-top: 12px;
+      background-color: rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .calendar-title,
+    .calendar-subtitle {
+      text-align: center;
+      height: 28px;
+    }
+    .calendar-title {
+      //color: @blue-1;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .calendar-subtitle {
+      font-size: 12px;
+      //color: @black-2;
+    }
+    .calendar-cell-wrapper {
+      padding: 6px 12px 12px 12px;
+      .calendar-cell-row {
+        padding: 6px 0;
+        span {
+          height: 24px;
+          line-height: 24px;
+        }
+      }
+      .calendar-cell-has-shift {
+        width: 24px;
+        height: 24px;
+        border-radius: 24px;
+        display: inline-block;
+        background: rgb(70, 160, 240);
+        color: white;
+      }
+    }
+    &.calendar-selected {
+      box-shadow: 0 1px 7px #5803fd inset;
+    }
+  }
+}

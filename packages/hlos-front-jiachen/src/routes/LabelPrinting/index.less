@@ -1,0 +1,43 @@
+.jc-label-printing {
+  overflow: hidden;
+  width: 360px;
+
+  .label-item {
+    margin: 0 4px 0 0;
+    padding-left: 6px;
+    width: 79px;
+    height: 39.5px;
+    display: flex;
+    align-items: center;
+
+    .item-code {
+      word-break: break-all;
+      width: 40px;
+      font-size: 2px;
+      line-height: 10px;
+      padding-left: 2px;
+      font-family: cursive;
+    }
+  }
+}
+
+@media print {
+  .jc-label-printing {
+    html,
+    body {
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      height: auto !important;
+
+      .page-before {
+        page-break-before: always !important;
+        height: 0 !important;
+      }
+    }
+
+    @page {
+      margin: 0 auto;
+    }
+  }
+}

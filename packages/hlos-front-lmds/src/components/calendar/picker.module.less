@@ -1,0 +1,39 @@
+.date-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    width: 32px;
+    text-align: center;
+    user-select: none;
+}
+
+.date-arrow {
+    i {
+        transform: scale(0.5);
+        &:hover {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+.date-separator {
+    display: inline-block;
+    padding: 0 6px;
+}
+
+.date-text-wrapper {
+    width: 120px;
+    //color: @blue-1;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.03);
+    }
+    span {
+        display: inline-block;
+    }
+}
+
+.date-text {
+    font-variant: normal;
+}

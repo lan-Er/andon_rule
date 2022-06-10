@@ -1,0 +1,354 @@
+// 内容页面
+.cutter-page-content {
+  min-height: calc(100% - 16px - 16px);
+  padding: 8px;
+  :global {
+    .c7n-card.ued-detail-card > .c7n-card-body {
+      padding: 0;
+      padding-bottom: 0;
+    }
+    .c7n-radio-group-wrapper {
+      float: right;
+    }
+  }
+
+  // 公共title
+  .cutter-common-title {
+    padding: 0 17px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgba(3, 1, 1, 0.85);
+    line-height: 42px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .item-bottom-border {
+    border-right: 1px solid #e8e8e8;
+  }
+
+  // 刀具总揽
+  .view-cutter-over {
+    border-radius: 6px;
+    width: 100%;
+    height: 188px;
+    background-color: #fff;
+    .item-list {
+      width: 100%;
+      height: 138px;
+      display: flex;
+      align-items: center;
+      .cutter-item {
+        width: 14.28vw;
+        height: 116px;
+        padding: 8px;
+        .item-header {
+          font-size: 14px;
+          color: #384351;
+          line-height: 36px;
+          position: relative;
+        }
+        .item-content {
+          width: 100%;
+          height: 38px;
+          border-right: 1px solid #e8e8e8;
+          font-size: 34px;
+          color: #384351;
+          line-height: 38px;
+        }
+        .item-content-right {
+          width: 100%;
+          height: 38px;
+          font-size: 34px;
+          color: #384351;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+
+  // 刀具类型和刀具占比
+  .cutter-type-proportion {
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+    .cutter-title {
+      overflow: hidden;
+      border-bottom: 1px solid #e7e7e7;
+      p {
+        padding: 0 17px;
+        margin-bottom: 0;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.85);
+        line-height: 42px;
+      }
+      .title-div {
+        float: left;
+        width: 50%;
+        .title-div-p {
+          float: left;
+          width: 30%;
+        }
+        .title-div-select {
+          float: left;
+          width: 50%;
+          padding-top: 7px;
+        }
+        .title-div-radio {
+          padding-right: 10px;
+          padding-top: 7px;
+        }
+      }
+    }
+    .type-proportion-left {
+      float: left;
+      width: 59.5%;
+      height: 430px;
+      border-radius: 6px;
+      background-color: #fff;
+      .type-content-left-img {
+        box-sizing: border-box;
+        margin-top: 30px;
+      }
+    }
+    .type-proportion-right {
+      margin-left: 1%;
+      float: left;
+      width: 39.5%;
+      height: 430px;
+      border-radius: 6px;
+      background-color: #fff;
+      .proportion-content-right-img {
+        box-sizing: border-box;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  // 刀具寿命预警和刀具维修
+  .cutter-life-repair {
+    margin-top: 8px;
+    width: 100%;
+    overflow: hidden;
+    .life-repair-div {
+      float: left;
+      width: 49.5%;
+      border-radius: 6px;
+      height: 234px;
+      background-color: #fff;
+      .lift-left {
+        .items {
+          overflow: hidden;
+          padding-left: 10px;
+          margin-top: 10px;
+          .item {
+            width: calc(50% - 10px);
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 14px 12px 12px 11px;
+            background: #fafafa;
+            > div {
+              display: flex;
+              justify-content: space-between;
+              p {
+                margin-bottom: 0;
+              }
+            }
+            .item-top {
+              margin-bottom: 15px;
+              font-size: 14px;
+              color: #333;
+              .status {
+                font-size: 12px;
+                color: #2ac5a9;
+              }
+            }
+            .item-bottom {
+              font-size: 12px;
+              color: #aaadba;
+              .item-bottom-p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: 31%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .div-rignt {
+      margin-left: 1%;
+    }
+    .repair-right {
+      .cutter-title {
+        overflow: hidden;
+        border-bottom: 1px solid #e7e7e7;
+        p {
+          padding: 0 17px;
+          margin-bottom: 0;
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.85);
+          line-height: 42px;
+        }
+        .title-div {
+          float: left;
+          width: 50%;
+          .title-div-radio {
+            padding-right: 10px;
+            padding-top: 7px;
+          }
+        }
+      }
+      .items {
+        overflow: hidden;
+        padding-left: 10px;
+        margin-top: 10px;
+        .item {
+          width: calc(50% - 10px);
+          float: left;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          padding: 14px 12px 12px 11px;
+          background: #fafafa;
+          > div {
+            display: flex;
+            justify-content: space-between;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          .item-top {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+            .status {
+              font-size: 20px;
+              color: #ffa958;
+            }
+          }
+          .item-bottom {
+            font-size: 12px;
+            color: #aaadba;
+          }
+        }
+      }
+    }
+  }
+
+  // 刀具设备地图
+  .cutter-equipment-map-content {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    .cutter-equipment-map {
+      overflow: hidden;
+      .map-lines {
+        padding: 19px 13px 0 22px;
+        .line-item {
+          padding-left: 17px;
+          padding-bottom: 17px;
+          border-left: 1px dotted #d8d8d8;
+          position: relative;
+          .dot {
+            width: 6px;
+            height: 6px;
+            background-color: #d8d8d8;
+            border-radius: 50%;
+            position: absolute;
+            top: 9px;
+            left: -3px;
+          }
+          .line-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #333;
+          }
+          .items {
+            overflow: hidden;
+            .item {
+              width: calc(25% - 16px);
+              float: left;
+              margin-right: 16px;
+              margin-bottom: 10px;
+              padding: 14px 12px 12px 11px;
+              background: #fafafa;
+              border-radius: 2px;
+              border-left: 4px solid #2ac5a9;
+              > div {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  margin-bottom: 0;
+                }
+              }
+              .item-top {
+                margin-bottom: 15px;
+                font-size: 14px;
+                color: #333;
+                line-height: 12px;
+                .status {
+                  font-size: 12px;
+                  color: #2ac5a9;
+                }
+              }
+              .item-bottom {
+                font-size: 12px;
+                color: #aaadba;
+                line-height: 12px;
+              }
+            }
+            .MAP9270CA {
+              border-left: 4px solid #9270ca;
+              .status {
+                color: #9270ca !important;
+              }
+            }
+            .MAPF6BD16 {
+              border-left: 4px solid #f6bd16;
+              .status {
+                color: #f6bd16 !important;
+              }
+            }
+            .MAP5AD8A6 {
+              border-left: 4px solid #5ad8a6;
+              .status {
+                color: #5ad8a6 !important;
+              }
+            }
+            .MAP6DC8EC {
+              border-left: 4px solid #6dc8ec;
+              .status {
+                color: #6dc8ec !important;
+              }
+            }
+            .MAP6DC8EC {
+              border-left: 4px solid #6dc8ec;
+              .status {
+                color: #6dc8ec !important;
+              }
+            }
+            .MAPC2C8D5 {
+              border-left: 4px solid #c2c8d5;
+              .status {
+                color: #c2c8d5 !important;
+              }
+            }
+            .MAPFF9D4D {
+              border-left: 4px solid #ff9d4d;
+              .status {
+                color: #ff9d4d !important;
+              }
+            }
+          }
+        }
+        .line-item:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

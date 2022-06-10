@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="20px" viewBox="0 0 28 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>图标_工号</title>
+    <g id="班组管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="班组管理_绩效查看_弹窗" transform="translate(-344.000000, -174.000000)">
+            <g id="编组-21" transform="translate(146.000000, 83.000000)">
+                <g id="编组" transform="translate(196.000000, 85.000000)">
+                    <g transform="translate(4.000000, 7.000000)">
+                        <rect id="矩形" stroke="#1C879C" stroke-width="3" x="0" y="0.777777778" width="24" height="16"></rect>
+                        <text id="NO." font-family="PangMenZhengDao" font-size="10.4" font-weight="normal" fill="#1C879C">
+                            <tspan x="4" y="12">NO.</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

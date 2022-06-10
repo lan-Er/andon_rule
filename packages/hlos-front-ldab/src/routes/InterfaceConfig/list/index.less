@@ -1,0 +1,71 @@
+@import '~hzero-ui/lib/style/themes/default.less';
+@import '~hzero-front/lib/index.less';
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  .ruleNumber {
+    margin-bottom: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    a {
+      color: rgba(153, 153, 153, 0.85);
+      transition: color 0.4s;
+    }
+  }
+  :global {
+    .ant-card-meta-title {
+      margin-bottom: 12px;
+      & > a {
+        color: @heading-color;
+      }
+    }
+    .ant-card-actions {
+      background: #f7f9fa;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    .ant-card-body:hover {
+      a {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+:global {
+  .c7n-pro-modal-container {
+    z-index: 1001;
+  }
+}
+
+.interfaceClass {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.interfaceClass {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.interfaceLeftClass {
+  width: 30%;
+  float: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.interfaceRightClass {
+  width: 65%;
+  float: left;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

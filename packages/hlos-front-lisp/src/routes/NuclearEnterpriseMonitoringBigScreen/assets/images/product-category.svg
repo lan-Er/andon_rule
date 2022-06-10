@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="52px" viewBox="0 0 51 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>种类</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.3282343%" id="linearGradient-1">
+            <stop stop-color="#3CADD9" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3CADD9" stop-opacity="0.338833042" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-1019.000000, -185.000000)">
+            <g id="编组-25" transform="translate(1015.500000, 186.000000)">
+                <g id="种类" transform="translate(4.000000, 0.000000)">
+                    <polygon id="多边形" stroke-opacity="0.278791521" stroke="#FFFFFF" fill="url(#linearGradient-1)" points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5"></polygon>
+                    <g id="编组" transform="translate(13.000000, 12.000000)" fill="#50CEFF" fill-rule="nonzero">
+                        <path d="M11.9959677,25.8064516 L0.0144009325,18.4368664 L0.0144009325,16.5935484 L11.9959677,23.9705069 L23.9775346,16.5935484 L23.9775346,18.4368664 L11.9959677,25.8064516 Z M0.0144009325,12.9050691 L0.0144009325,11.0617512 L11.9959677,18.4387097 L23.9775346,11.0617512 L23.9775346,12.9050691 L11.9959677,20.278341 L0.0144009325,12.9050691 L0.0144009325,12.9050691 Z M0.0144009325,7.37695852 L12.0180876,0 L23.9775346,7.37695852 L11.9959677,14.7465438 L0.0144009325,7.37695852 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

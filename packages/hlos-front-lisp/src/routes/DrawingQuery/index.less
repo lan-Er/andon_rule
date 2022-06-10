@@ -1,0 +1,224 @@
+.drawing-box {
+  height: 100%;
+  background-color: #141b23;
+  padding: 20px;
+  overflow: hidden;
+
+  iframe {
+    border: none;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .c7n-pro-select-wrapper {
+    background-color: #141b23;
+  }
+
+  .drawing-header {
+    display: flex;
+    justify-content: space-between;
+
+    .c7n-pro-select-multiple-block {
+      background: #326073;
+    }
+
+    .drawing-header-title {
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 0;
+      line-height: 22px;
+    }
+  }
+
+  .drawing-content-box {
+    height: 100%;
+
+    .drawing-query-bar {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: flex-start;
+
+      .c7n-pro-btn {
+        background: #131b24;
+        border: 1px solid #326073;
+        border-radius: 2px;
+      }
+
+      .c7n-pro-btn-primary,
+      .c7n-pro-input-wrapper {
+        background: #326073;
+        border-radius: 2px;
+      }
+
+      .c7n-pro-select,
+      .c7n-pro-input {
+        color: #fff;
+      }
+    }
+
+    .drawing-content {
+      overflow: hidden;
+      background-image: url('./assets/background@2x.png');
+      background-size: 100% 100%;
+      position: relative;
+      height: 90%;
+
+      .drawing-content-square {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 80px;
+      }
+
+      .drawing-content-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 35px;
+
+        .drawing-select {
+          background-color: #141b23;
+        }
+
+        .drawing-content-title {
+          color: #fff;
+          font-size: 18px;
+
+          .c7n-pro-select-expand {
+            background: #141b23;
+          }
+        }
+
+        .select-btn {
+          color: #ccc;
+          line-height: 3;
+          text-align: right;
+
+          .select-btn-item {
+            margin: 0 5px;
+          }
+
+          .select-btn-item:hover {
+            cursor: pointer;
+            color: #fff;
+          }
+
+          .select-btn-disabled:hover {
+            cursor: not-allowed !important;
+            color: #ccc !important;
+          }
+        }
+      }
+
+      .drawing-content-iframe {
+        padding: 20px;
+        height: 100%;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .page-content {
+    background: #141b23;
+  }
+
+  :global {
+    .c7n-pro-select,
+    .c7n-pro-input {
+      background: #132330;
+      border: 1px solid rgba(68, 130, 153, 0.59);
+      color: #4a6b75;
+
+      input {
+        border-radius: 2px;
+      }
+    }
+
+    .c7n-pro-field-label {
+      color: #fff;
+      outline: #fff;
+    }
+
+    .c7n-pro-btn-default {
+      background: #131b24;
+      border: 1px solid #326073;
+      border-radius: 2px;
+      color: #fff;
+    }
+
+    .drawing-box .c7n-pro-btn-default {
+      border-color: transparent;
+      background: #131b24;
+    }
+
+    .c7n-pro-select-suffix .icon-baseline-arrow_drop_down:before {
+      color: #fff;
+    }
+
+    .c7n-pro-select-suffix .icon-baseline-arrow_drop_down:before {
+      color: #fff;
+    }
+
+    .c7n-pro-form-focused {
+      color: #fff;
+    }
+  }
+}
+
+.drawing-query-modal {
+  .c7n-pro-modal-content {
+    background-color: #16232f !important;
+
+    .c7n-pro-radio-inner {
+      border: 0 !important;
+      color: #fff;
+      background-color: #16232f !important;
+    }
+
+    .c7n-pro-modal-header {
+      background-color: #16232f !important;
+
+      .c7n-pro-modal-title,
+      .c7n-pro-modal-header-button {
+        color: #fff;
+      }
+    }
+  }
+
+  .preview-modal {
+    .preview-item-content {
+      float: left;
+      margin: 10px 15px;
+    }
+    .c7n-pro-radio-inner {
+      border: 0 !important;
+      color: #fff;
+      background-color: #16232f !important;
+    }
+
+    .drawing-item-title {
+      color: #fff;
+      text-align: center;
+    }
+
+    .drawing-item-title:hover {
+      color: #5cbbcb;
+      cursor: pointer;
+    }
+
+    iframe {
+      border: none;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.drawing-iframe-body {
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,109 @@
+.modal-body {
+  color: #fff;
+  font-size: 16px;
+  :global {
+    .c7n-pro-select-wrapper, .c7n-pro-calendar-picker-wrapper {
+      width: 100%;
+      input {
+        height: 48px;
+        border: none;
+        font-size: 20px;
+      }
+    }
+    .c7n-pro-select-suffix .icon-search:before {
+      font-size: 18px;
+      top: 0 !important;
+    }
+    .c7n-pro-select-suffix {
+      .c7n-pro-select-trigger::before {
+        color: #fff;
+      }
+    }
+    // .c7n-pro-calendar-picker-wrapper {
+    //   .c7n-pro-calendar-picker {
+    //     height: 48px;
+    //     border: none;
+    //     font-size: ;
+    //   }
+    // }
+    .icon-date_range:before {
+      font-size: 18px !important;
+      top: 15px !important;
+    }
+  }
+  .modal-main {
+    >div {
+      >div:first-child {
+        margin-bottom: 12px;
+      }
+    }
+    >div + div {
+      margin-top: 32px;
+    }
+    .report-type {
+      :global {
+        .c7n-pro-radio-wrapper {
+          background: #2B3031;
+          border-radius: 4px;
+        }
+        .c7n-pro-radio-label {
+          font-size: 20px;
+          color: #666;
+        }
+        .c7n-pro-radio-inner {
+          border: none;
+        }
+        .c7n-pro-radio:checked + .c7n-pro-radio-inner {
+          background: #1C879C;
+        }
+        .c7n-pro-radio:checked + .c7n-pro-radio-inner + span {
+          color: #fff;
+        }
+      }
+    }
+    .concat-input {
+      display: flex;
+      .select-wrapper {
+        width: 25%;
+        background: #fff;
+        :global {
+          .c7n-pro-select-wrapper {
+            border-radius: 4;
+            width: calc(100% - 8px);
+            margin-left: 8px;
+            margin-top: 8px;
+            background: #1C879C;
+            text-align: center;
+            input {
+              height: 32px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 76px;
+    font-weight: 500;
+    font-size: 20px;
+    .exit-btn {
+      cursor: pointer;
+    }
+    :global {
+      .c7n-pro-btn {
+        width: 232px;
+        height: 56px;
+        background: #1C879C;
+        color: #fff;
+        font-weight: 500;
+        font-size: 24px;
+        border: none;
+      }
+    }
+  }
+}

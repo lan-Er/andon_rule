@@ -1,0 +1,67 @@
+:global {
+  .status-modal,
+  .remark-modal {
+    .c7n-pro-modal-body {
+      padding: 0;
+    }
+    .c7n-pro-modal-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .c7n-pro-modal-footer {
+      div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+      }
+      .c7n-pro-btn-default {
+        margin-left: 20px;
+      }
+    }
+  }
+  .status-modal-content {
+    .content-title {
+      background: #d7d7d7;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .desc {
+        font-size: 16px;
+        margin-right: 40px;
+      }
+      .status {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+    .content-edit {
+      display: flex;
+      padding: 30px 0;
+      justify-content: center;
+      align-items: center;
+      .desc {
+        font-size: 16px;
+      }
+    }
+  }
+  .remark-modal-content {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 16px;
+      margin-bottom: 10px;
+      width: 450px;
+      text-align: left;
+    }
+    .remark-edit {
+      .c7n-pro-textarea {
+        width: 450px;
+      }
+    }
+  }
+}

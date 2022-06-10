@@ -1,0 +1,127 @@
+.dispatch-order-report {
+  background-color: #213148;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px;
+  position: relative;
+  overflow: hidden;
+
+  :global {
+    .c7n-spin-nested-loading {
+      position: relative;
+      height: 100%;
+    }
+
+    .c7n-spin-container {
+      position: relative;
+      zoom: 1;
+      height: 100%;
+    }
+  }
+
+  .dispatch-order-report-content {
+    :global {
+      p {
+        margin-bottom: 6px;
+      }
+    }
+
+    .content-left,
+    .content-right {
+      background-color: #001f2e;
+      border: 1px solid #425057;
+      color: #eceef0;
+      padding: 10px 20px;
+
+      .content-info-area {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+          font-size: 16px;
+        }
+
+        .order-num {
+          font-size: 18px;
+        }
+
+        .order-status {
+          background-color: #199ed8;
+          border-radius: 4px;
+          padding: 0 6px;
+          margin-left: 10px;
+        }
+
+        .right-box {
+          border-radius: 0.5em;
+          background-color: #425660;
+          width: 36%;
+          padding: 5px 10px;
+          height: 70px;
+
+          .order-work-time {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .content-left {
+      margin-right: 16px;
+
+      .content-remark {
+        min-height: 150px;
+        background-color: #425660;
+        border-radius: 8px;
+        margin-top: 16px;
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .content-right {
+      .bottom-box {
+        margin-top: 300px;
+        text-align: center;
+        color: #001f2e;
+
+        span {
+          width: 50%;
+          display: inline-block;
+          padding: 2px 0;
+
+          &:first-child {
+            background-color: #00cd3e;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+
+          &:last-child {
+            background-color: #ffff00;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .dispatch-order-report-footer {
+    position: absolute;
+    bottom: 20px;
+
+    div {
+      text-align: center;
+      float: left;
+    }
+
+    span {
+      display: block;
+      color: #fff;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

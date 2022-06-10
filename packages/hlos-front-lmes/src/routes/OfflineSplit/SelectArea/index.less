@@ -1,0 +1,103 @@
+.select-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 0;
+  .select-area-left {
+    display: flex;
+    :global {
+      .c7n-pro-input-wrapper,
+      .c7n-pro-select-wrapper {
+        input {
+          height: 64px;
+          font-size: 30px;
+          line-height: 36px;
+          color: #979797;
+        }
+        .c7n-pro-select-suffix {
+          .icon-search::before {
+            font-size: 24px !important;
+            top: 0 !important;
+          }
+        }
+      }
+      .c7n-pro-input-suffix {
+        width: 48px;
+        height: 53px;
+        right: 10px;
+        img {
+          width: 48px;
+          height: 53px;
+        }
+      }
+      .c7n-pro-input-wrapper {
+        width: 32.8vw;
+      }
+      .c7n-pro-select-wrapper {
+        width: 32.8vw;
+        input {
+          height: 48px;
+          font-size: 20px;
+          line-height: 28px;
+          color: #999;
+        }
+      }
+    }
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 40px;
+      font-family: PingFang SC, serif;
+      font-style: normal;
+      color: #333;
+      .top {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .bottom {
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 100%;
+      }
+    }
+  }
+  .select-area-right {
+    display: flex;
+    height: 48px;
+    :global {
+      .c7n-pro-select-wrapper {
+        width: 17.4vw;
+        input {
+          height: 48px;
+          font-size: 20px;
+          line-height: 28px;
+          color: #999;
+        }
+      }
+      .c7n-pro-select-suffix {
+        .icon-search::before {
+          font-size: 24px !important;
+          top: 0 !important;
+        }
+      }
+      .c7n-pro-select-prefix {
+        > img {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+    > img {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      top: 11px;
+      z-index: 999;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+}

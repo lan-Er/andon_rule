@@ -1,0 +1,235 @@
+.lwms-wip-completion {
+  .c7n-pro-field-wrapper {
+    margin-right: 24px;
+    padding: 7.5px 0;
+  }
+  .c7n-pro-select,
+  .c7n-pro-input {
+    height: 48px;
+    font-size: 20px;
+    color: #333;
+    &::placeholder {
+      color: #999;
+    }
+  }
+  .c7n-pro-input-wrapper {
+    background-color: transparent;
+  }
+  .c7n-pro-select-suffix {
+    .icon {
+      transform: scale(2);
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.lwms-wip-completion-header {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #076476 0%, #1d889d 100%);
+}
+.lwms-wip-completion-sub-header {
+  display: flex;
+  background-color: #fff;
+  padding: 12.5px 0;
+  .avator {
+    flex: 0 0 80px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 6px;
+    text-align: center;
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #3f8795;
+      margin-bottom: 5px;
+    }
+  }
+  .query-input {
+    position: relative;
+    .c7n-pro-select-wrapper {
+      width: 100%;
+      .c7n-pro-select {
+        padding-left: 42px;
+      }
+    }
+    .c7n-pro-input-wrapper {
+      width: 100%;
+      .c7n-pro-input {
+        padding-left: 42px;
+      }
+    }
+    img {
+      width: 26px;
+      height: 26px;
+      position: absolute;
+      top: 11px;
+      z-index: 999;
+    }
+    img:nth-child(3) {
+      left: 8px;
+    }
+    img:nth-child(4) {
+      right: 8px;
+      cursor: pointer;
+    }
+    &.lock {
+      .c7n-pro-select-suffix {
+        right: 30px;
+      }
+    }
+  }
+}
+.lwms-wip-completion-content-search {
+  padding: 16px 18px;
+  display: flex;
+  .tab-btn {
+    margin-right: 16px;
+    .c7n-pro-btn + .c7n-pro-btn {
+      margin-left: 0;
+    }
+    .c7n-pro-btn {
+      height: 48px;
+      font-size: 20px;
+      color: #666;
+      border: 1px solid #979797;
+      img {
+        width: 20px;
+        height: 20px;
+        margin: -3px 7px 0 0;
+      }
+      &.active {
+        background: #1c879c;
+        color: #fff;
+      }
+    }
+    .c7n-pro-btn:nth-child(2) {
+      border-left: 0;
+      border-right: 0;
+    }
+  }
+  .c7n-pro-input {
+    width: 354px;
+    background-color: #fff;
+    border: 1px solid #979797;
+  }
+  .item-input {
+    margin-right: 20px;
+    .c7n-pro-select {
+      border: 1px solid #979797;
+    }
+    .c7n-pro-input {
+      width: 305px;
+    }
+  }
+  .item-scan {
+    position: relative;
+    img {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      z-index: 1;
+    }
+  }
+}
+
+.lwms-wip-completion-content-list {
+  padding: 0 18px;
+  height: calc(100vh - 420px);
+  overflow: scroll;
+  .list-item {
+    height: 88px;
+    display: grid;
+    grid-template-columns: 4% 26% 20% 25% 25%;
+    align-items: center;
+    padding: 0 73px 0 23px;
+    background: #fff;
+    font-size: 22px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    .item-check {
+      line-height: 28px;
+      .c7n-checkbox-wrapper {
+        .c7n-checkbox-inner {
+          width: 24px;
+          height: 24px;
+          border: 1px solid #999;
+          font-size: 24px;
+        }
+        .c7n-checkbox-inner::after {
+          top: 3px;
+          left: 8px;
+        }
+      }
+    }
+
+    .item-qty-input {
+      display: flex;
+      align-items: center;
+      .uom {
+        margin-left: 12px;
+      }
+    }
+    p {
+      line-height: 56px;
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+  .list-item:nth-child(2n) {
+    background: #f7f7f7;
+  }
+  .list-item:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.lwms-wip-completion-footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  padding: 16px 0;
+  background: linear-gradient(to bottom, #adaeb0 0%, #c4c5c7 100%);
+  .icon {
+    width: 88px;
+    height: 88px;
+    margin-right: 32px;
+    background-image: linear-gradient(0deg, #cdcecf 0%, #e5e7e9 100%);
+    img {
+      margin: 5px 20px 5.3px;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      background-image: linear-gradient(
+        90deg,
+        rgba(145, 145, 145, 0) 0%,
+        rgba(173, 173, 173, 0.49) 50%,
+        rgba(151, 151, 151, 0) 100%
+      );
+    }
+    .text {
+      margin-top: 2.7px;
+      font-size: 16px;
+      color: #051e2d;
+      text-align: center;
+    }
+  }
+  > div:last-child {
+    .icon:last-child {
+      margin-right: 0;
+    }
+  }
+}

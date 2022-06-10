@@ -1,0 +1,151 @@
+@import '../index.module.less';
+
+.sider {
+  float: left;
+  height: 100%;
+  width: 210px;
+  background: rgb(241, 241, 241);
+  border-right: 1px solid #d9d9d9;
+  position: relative;
+  user-select: none;
+  display: inline-flex;
+  flex-direction: column;
+
+  .sider-top {
+    flex: 1;
+
+    .legend-wrapper {
+      //border-bottom: 1px solid #d9d9d9;
+      padding: 20px 0;
+
+      .legend {
+        font-size: 12px;
+        font-weight: bold;
+        position: relative;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 12px;
+
+        i {
+          display: inline-block;
+          position: absolute;
+          left: 70px;
+          right: 12px;
+          top: 6px;
+          bottom: 6px;
+          border-radius: 4px;
+
+          &::before {
+            content: ':';
+            position: absolute;
+            margin-top: -7px;
+            margin-left: -10px;
+          }
+        }
+      }
+    }
+  }
+
+  .product-line {
+    font-size: 12px;
+    padding: 0 12px;
+    margin: 12px 0;
+
+    > li {
+      height: 32px;
+      line-height: 32px;
+      border-bottom: 1px solid rgba(217, 217, 217, 0.55);
+      list-style: none;
+      position: relative;
+    }
+  }
+}
+
+.content {
+  display: inline-block;
+  width: calc(100% - 210px);
+  float: left;
+  height: 100%;
+
+  .col {
+    float: left;
+    width: 14.2857%;
+  }
+
+  .content-header {
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: center;
+    background-color: white;
+    user-select: none;
+  }
+
+  .content-calendar-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 42px);
+    .content-row {
+      overflow: hidden;
+      width: 100%;
+      flex: 1;
+    }
+    .cell {
+      border-right: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+      height: 100%;
+
+      .cell-title {
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+      }
+
+      &.cell-current {
+        .cell-title {
+          color: red;
+          font-weight: bold;
+        }
+      }
+
+      &.cell-other {
+        .cell-title {
+          //color: @black-3;
+        }
+      }
+
+      &.cell-weekend {
+        background-color: rgba(241, 241, 241, 0.5);
+      }
+
+      .cell-shift-wrapper {
+        font-size: 12px;
+        height: 24px;
+        line-height: 18px;
+        padding: 3px 6px;
+
+        > div {
+          border-radius: 4px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          padding: 0 3px;
+        }
+
+        + .cell-shift-wrapper {
+          margin-top: 3px;
+        }
+
+        label {
+          margin-right: 3px;
+        }
+
+        .time {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

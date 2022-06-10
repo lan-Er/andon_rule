@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮_提交</title>
+    <defs>
+        <filter x="-16.7%" y="-16.7%" width="133.3%" height="133.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102381993 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="按钮_提交" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" filter="url(#filter-1)">
+            <polygon id="Fill-1" fill="#505050" points="7 6.99986579 7 40.4048658 40.405 40.4048658 40.405 21.4946026 35.6320263 21.4946026 35.6320263 35.6314447 11.7734211 35.6314447 11.7734211 11.7728395 25.9460526 11.7728395 25.9460526 6.99986579"></polygon>
+            <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+            <polygon id="Fill-2" fill="#505050" points="26.7406237 19.6638368 22.7447289 15.6674947 19.4042289 19.0075474 26.7406237 26.1059421 40.9374132 12.1480474 37.5973605 8.80754737"></polygon>
+        </g>
+    </g>
+</svg>

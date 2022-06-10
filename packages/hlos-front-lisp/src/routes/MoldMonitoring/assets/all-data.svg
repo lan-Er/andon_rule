@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="72px" viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>总数</title>
+    <g id="模具监控" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-356.000000, -170.000000)" id="编组-5">
+            <g transform="translate(208.000000, 149.000000)">
+                <g id="总数" transform="translate(148.000000, 21.000000)">
+                    <circle id="椭圆形" fill="#EEF9FE" cx="36" cy="36" r="36"></circle>
+                    <g id="编组" transform="translate(20.000000, 19.000000)" fill="#409EFF" fill-rule="nonzero">
+                        <path d="M12.375,33 L20.625,33 L20.625,0 L12.375,0 L12.375,33 Z M0,33 L8.25,33 L8.25,16.5 L0,16.5 L0,33 Z M24.75,10.3125 L24.75,33 L33,33 L33,10.3125 L24.75,10.3125 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

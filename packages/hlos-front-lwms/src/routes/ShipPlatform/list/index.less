@@ -1,0 +1,91 @@
+.lwms-ship-platform {
+  height: 100%;
+  :global {
+    .c7n-spin-nested-loading,
+    .c7n-spin-spinning,
+    .c7n-spin-container {
+      height: 100%;
+      max-height: unset;
+    }
+  }
+  .lwms-ship-platform-query {
+    display: inline-flex;
+    :global {
+      .c7n-pro-select {
+        > ul {
+          width: 100%;
+          height: 28px;
+          overflow: hidden;
+        }
+      }
+      .c7n-pro-select-multiple .c7n-pro-select:not(:last-child) {
+        padding-right: 0;
+      }
+    }
+  }
+  .lwms-ship-platform-content {
+    :global {
+      .c7n-pro-pagination {
+        text-align: right;
+      }
+    }
+  }
+}
+.lwms-ship-return-platform-type-modal {
+  width: 912px;
+  .active {
+    background: rgba(0, 179, 169, 0.06);
+    border: 2px solid #00b3a9 !important;
+  }
+  :global {
+    .c7n-pro-btn-primary {
+      background: #00b3a9 !important;
+      border-color: #00b3a9 !important;
+    }
+    .c7n-pro-modal-header {
+      .c7n-pro-modal-title {
+        font-size: 16px;
+        line-height: 16px;
+        color: #4a4a4a;
+      }
+    }
+    .c7n-pro-modal-body {
+      > div:first-child {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        > div {
+          display: flex;
+          align-items: center;
+          padding: 26px 24px 30px 32px;
+          border: 1px solid #ddd;
+          cursor: pointer;
+          img {
+            margin-right: 21px;
+          }
+          > div {
+            p {
+              margin-bottom: 8px;
+            }
+            > p:first-child {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 16px;
+              color: #333;
+            }
+            > p:last-child {
+              font-size: 14px;
+              line-height: 20px;
+              color: #999;
+            }
+          }
+        }
+      }
+      > div:last-child {
+        margin-top: 25px;
+        text-align: right;
+      }
+    }
+  }
+}

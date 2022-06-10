@@ -1,0 +1,52 @@
+# Default values for api-gateway.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: registry.cn-hangzhou.aliyuncs.com/hzero-hzero/hzero-front
+
+service:
+  enable: false
+  type: ClusterIP
+  port: 80
+  name: hzero-front
+
+ingress:
+  enable: false
+
+env:
+  open:
+    BUILD_BASE_PATH: /
+    BUILD_PUBLIC_URL: /
+    BUILD_WEBSOCKET_HOST: http://zoneda.onestep-cloud.com/hpfm/sock-js
+    BUILD_BPM_HOST: https://zoneda.onestep-cloud.com
+    BUILD_CLIENT_ID: hlos-front-uat
+    BUILD_API_HOST: https://zoneda.onestep-cloud.com
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
+    BUILD_PLATFORM_VERSION: SAAS
+    BUILD_MULTIPLE_SKIN_ENABLE: true # UED配置是否启用，true/false
+    BUILD_TOP_MENU_LABELS: HZERO_MENU # 首页菜单标签，比如HZERO_MENU
+    BUILD_TOP_MENU_UNION_LABEL: false # 是否按照标签并集查询(即只要存在一个标签即可), 默认否(false)
+    BUILD_TRACE_LOG_ENABLE: true  # // TraceLog日志追溯分析是否启用，true/false
+    BUILD_IM_ENABLE: false # 是否启用即时通讯服务
+    BUILD_IM_WEBSOCKET_HOST: ws://zhwim.onestep-cloud.com # 即时通讯服务 websocket
+    BUILD_CUSTOMIZE_ICON_NAME: zone-icon # 客制化的iconfont font family 名称
+    BUILD_HISTORY_ENABLE: true # 审计服务监控日志是否启用，true/false
+
+logs:
+  parser: nginx
+
+resources:
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources,such as Minikube. If you do want to specify resources,uncomment the following
+  # lines,adjust them as necessary,and remove the curly braces after 'resources:'.
+  limits:
+    # cpu: 100m
+    # memory: 2Gi
+  requests:
+    # cpu: 100m
+    # memory: 1Gi
+

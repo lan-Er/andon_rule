@@ -1,0 +1,124 @@
+/*
+ * @Description: 
+ * @Author: taotao.zhu@hand-china.com
+ * @Date: 2020-11-02 14:31:51
+ * @LastEditors: Axtlive
+ * @LastEditTime: 2020-11-11 16:17:54
+ */
+
+.Pqc-statistical-report {
+  .header-search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-search-left {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .header-search-first,
+      .header-search-second {
+        margin: 0 16px;
+        :global {
+          .c7n-pro-calendar-picker {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .header-search-right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      :global {
+        .hzero-permission-btn {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .search-title-content {
+    height: 30px;
+    width: 800px;
+    margin: 23px 0;
+    .search-title {
+      font-size: 16px;
+      line-height: 22px;
+      color: #333;
+    }
+    .search-tip {
+      margin-left: 12px;
+      font-size: 11px;
+      line-height: 12px;
+      color: #999;
+    }
+    .search-select {
+      margin-left: 12px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #333;
+      :global {
+        .c7n-pro-select {
+          width: 100px;
+        }
+      }
+    }
+  }
+  .top-search {
+    width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    .top-search-lineOne {
+      // flex: 1;
+      display: grid;
+      grid-template-columns: calc(25% - 5px) 0 calc(25% - 5px) 0 calc(25% - 5px) 0 calc(25% - 5px) 0;
+      grid-column-gap: 5px;
+      margin-bottom: 12px;
+    }
+    .top-search-lineTwo {
+      // flex: 1;
+      // display: flex;
+      display: grid;
+      grid-template-columns: calc(25% - 5px) 0 calc(25% - 5px) calc(25% - 5px) calc(25% - 5px);
+      grid-column-gap: 5px;
+      .lineTwo-right-item-rate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .statistical-rate {
+          flex: 1;
+          text-align: center;
+        }
+        .statistical-rate-mid {
+          margin: 0 8px;
+        }
+      }
+      .lineTwo-right-item-query {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .mid-chart {
+    width: 100%;
+    margin-top: 16px;
+    .expend-or-hide {
+      height: 22px;
+      width: 150px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    .chart-content {
+      min-height: 300px;
+      width: 100%;
+    }
+  }
+  .bottom-table {
+    margin-top: 20px;
+    min-height: 200px;
+  }
+}

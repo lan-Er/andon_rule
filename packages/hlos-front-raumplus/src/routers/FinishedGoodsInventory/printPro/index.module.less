@@ -1,0 +1,136 @@
+.my-print-pro {
+  @media print {
+    color: #000;
+    @page {
+      margin: 2mm;
+      padding: 0;
+      size: landscape;
+    }
+  }
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 0 5px 1fr 0 5px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial';
+  page-break-before: always;
+  > span:nth-of-type(odd) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-right: 1px dashed #000;
+  }
+  .item-time {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: translate(-10px) rotate(180deg);
+    transform-origin: center center;
+  }
+  > section {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #000;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    .item-top,
+    .item-bottom {
+      display: grid;
+      grid-template-columns: 7fr 3fr;
+      width: 100%;
+      overflow: hidden;
+      .item-top-left {
+        > div:nth-child(1) {
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          font-size: 20px;
+          span {
+            flex: 1;
+            margin-left: 20px;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+        > div:nth-child(2) {
+          font-weight: bold;
+          font-size: 22px;
+        }
+      }
+      .item-top-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        span {
+          display: block;
+          flex: 1;
+          font-size: 12px;
+          font-family: '微软雅黑';
+          text-align: center;
+          transform: scale(0.6);
+          transform-origin: center center;
+        }
+      }
+    }
+    .item-bottom {
+      box-sizing: border-box;
+      border-top: 1px solid #000;
+      .item-bottom-left {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-size: 12px;
+        .item-text-overflow {
+          flex: 1;
+          overflow: hidden;
+          > div {
+            width: 160%;
+            height: 160%;
+            transform: scale(0.625);
+            transform-origin: 0 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-overflow: ellipsis;
+            > span {
+              flex: 1;
+              display: block;
+              width: 100%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+            .print-erp-number {
+              height: 14px;
+              overflow: hidden;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+      .item-bottom-right {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        font-size: 13px;
+        text-align: center;
+        border-left: 1px dashed #000;
+      }
+    }
+  }
+}

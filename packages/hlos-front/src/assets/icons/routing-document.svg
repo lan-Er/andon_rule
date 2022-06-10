@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="49px" viewBox="0 0 48 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <filter x="-34.5%" y="-26.5%" width="169.0%" height="155.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102381993 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-2" transform="translate(0.000000, 1.000000)">
+            <g id="编组" filter="url(#filter-1)" transform="translate(10.000000, 6.000000)">
+                <polygon id="路径-2" stroke="#515050" stroke-width="4" points="0 1 0 34 29 34 29 8.24654906 22.1217452 1"></polygon>
+                <rect id="矩形" fill="#515050" x="17" y="0" width="4" height="10"></rect>
+                <rect id="矩形备份" fill="#515050" transform="translate(23.000000, 11.000000) rotate(-270.000000) translate(-23.000000, -11.000000) " x="21" y="5" width="4" height="12"></rect>
+            </g>
+            <rect id="矩形" x="0" y="0" width="48" height="48"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+.QRInstance {
+  text-align: center;
+  height: 200px;
+  position: relative;
+  .top {
+    display: flex;
+    .keys {
+      flex-grow: 1;
+      text-align: right;
+    }
+    .values {
+      flex-grow: 1;
+      text-align: left;
+      > div {
+        width: 200px;
+        border-bottom: 1px solid black;
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .QRCode {
+    height: 90px;
+    margin-top: 5px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 5px;
+    &::after {
+      content: '';
+      display: block;
+      width: 100%;
+      border-bottom: 2px solid #e2e2e2;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

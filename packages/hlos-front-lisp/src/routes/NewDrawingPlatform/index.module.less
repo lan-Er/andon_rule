@@ -1,0 +1,38 @@
+/*
+ * @Description: v20 图纸平台 CSS
+ * @Author: 赵敏捷 <minjie.zhao@hand-china.com>
+ * @Date: 2020-08-04 10:29:10
+ * @LastEditors: 赵敏捷
+ */
+
+#drawingPlatform {
+  .flexDisplayMixin (@direction: row, @flexWrap: nowrap) {
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @flexWrap;
+  }
+  .mainAxisCenter(@mainAxisCenter) {
+    justify-content: @mainAxisCenter;
+  }
+  .crossAxisCenter(@crossAxisCenter: center) {
+    align-items: @crossAxisCenter;
+  }
+}
+
+.c {
+  #drawingPlatform();
+  &-row {
+    .flexDisplayMixin(@direction: column;);
+    .mainAxisCenter(center);
+    .crossAxisCenter(flex-start);
+    &__value {
+      color: #999;
+      width: 100%;
+      text-align: left;
+      min-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

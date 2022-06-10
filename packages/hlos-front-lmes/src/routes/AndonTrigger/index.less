@@ -1,0 +1,369 @@
+.andon-trigger {
+  flex: 1;
+  background: #1c1e20;
+  p {
+    margin-bottom: 0;
+  }
+  :global {
+    .c7n-pro-select-wrapper {
+      height: 48px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .c7n-pro-select {
+      width: 100%;
+      height: 48px;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .c7n-pro-select-prefix {
+      margin: auto 16px;
+      img {
+        margin-top: -5px;
+      }
+    }
+    .icon-search {
+      top: 0 !important;
+    }
+    .icon-search::before,
+    .icon-close::before {
+      font-size: 18px !important;
+      color: #fff !important;
+    }
+  }
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px 8px;
+    height: 40px;
+    background: linear-gradient(180deg, #018e85 0%, #004c48 100%);
+    color: #fff;
+    span {
+      display: inline-block;
+      height: 25px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    img {
+      width: 31.84px;
+      height: 20px;
+      margin-right: 22px;
+      vertical-align: middle;
+    }
+  }
+  .content {
+    padding: 0 24px;
+    .pagination {
+      margin: 21px 24px 17px;
+      text-align: right;
+      i {
+        font-size: 24px;
+        color: #fff;
+      }
+      :global {
+        .icon-navigate_before {
+          margin-right: 20px;
+          cursor: pointer;
+        }
+        .icon-navigate_next {
+          cursor: pointer;
+        }
+      }
+    }
+    .query {
+      margin: 63px 0 17px 0;
+      :global {
+        .c7n-pro-select-wrapper {
+          width: 50%;
+        }
+        .c7n-pro-select {
+          padding-left: 62px;
+        }
+        .c7n-pro-select-prefix {
+          margin: auto 16px;
+          img {
+            margin-top: -5px;
+          }
+        }
+      }
+    }
+    .list {
+      margin-bottom: 106px;
+      display: grid;
+      grid-template-columns: 75% calc(25% - 21px);
+      grid-column-gap: 21px;
+      :global {
+        .c7n-tabs-tab {
+          height: 52px;
+          font-size: 20px;
+          color: #fff;
+        }
+        .c7n-tabs-tab-active {
+          color: #00b3a9;
+        }
+        .c7n-tabs-bar {
+          margin: 0;
+          border-bottom: 1px solid #505255;
+        }
+      }
+      > div {
+        background: #292c2f;
+        border: 1px solid #000;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 2px rgba(255, 255, 255, 0.07);
+        .pane-content {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          grid-column-gap: 24px;
+          grid-row-gap: 16px;
+          margin: 24px;
+          .pane-item {
+            padding: 14px 16px;
+            background: #bbb;
+            border: 1px solid #000;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 2px rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            text-align: center;
+            img {
+              width: 112px;
+              height: 112px;
+              cursor: pointer;
+            }
+            p:nth-child(2) {
+              margin: 12px 0;
+              font-weight: 500;
+              font-size: 22px;
+              line-height: 29px;
+            }
+            p:last-child {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+      .open-card {
+        .open-card-title {
+          height: 52px;
+          padding-left: 27px;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 52px;
+          color: #fff;
+          border: 1px solid #505255;
+        }
+        .open-card-content {
+          padding: 24px;
+          .main {
+            height: 450px;
+          }
+          .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-left: 19px;
+            background: #bbb;
+            img {
+              width: 65px;
+              height: 65px;
+              margin-right: 21px;
+            }
+            > div {
+              padding: 16px 0;
+              p:first-child {
+                font-weight: 500;
+                font-size: 18px;
+              }
+              p:last-child {
+                font-size: 16px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: #1c1e20;
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.18);
+    > div {
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .worker {
+      padding-right: 13px;
+      border-right: 1px solid #505255;
+      .circle {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        margin-right: 8px;
+        border-radius: 50%;
+        background: #0099ae;
+        font-size: 18px;
+        text-align: center;
+        > img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      .type {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .toggle {
+        height: 26px;
+        line-height: 26px;
+        margin-left: 21px;
+        padding: 0 10px;
+        background: linear-gradient(180deg, #018e85 0%, #004c48 100%);
+        border: 1px solid #000;
+        box-sizing: border-box;
+        box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.08);
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .exit {
+      padding-left: 28px;
+      border-left: 1px solid #505255;
+      .btn {
+        padding: 15px 15px 15px 24px;
+        background: #26292c;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.08);
+        font-size: 18px;
+        line-height: 25px;
+        cursor: pointer;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .login-content {
+    width: 55.6%;
+    margin: 10.5% 22.2% 0;
+    color: #fff;
+    :global {
+      .c7n-pro-select-wrapper {
+        width: 100%;
+        margin: 46px 0 62px 0;
+      }
+      .c7n-pro-select {
+        padding-left: 62px;
+      }
+      .icon-search {
+        top: 0;
+      }
+      .icon-search::before {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    .login-title {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 22px;
+    }
+    .login-btn {
+      > div {
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 18px;
+        line-height: 25px;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.08);
+        cursor: pointer;
+      }
+      .exit-btn {
+        background: #26292c;
+        margin-right: 16px;
+      }
+      .login-btn {
+        background: linear-gradient(180deg, #018e85 0%, #004c48 100%);
+      }
+    }
+  }
+}
+.andon-info-modal-wrapper {
+  :global {
+    .c7n-pro-modal-header,
+    .c7n-pro-modal-content {
+      background: #292c2f;
+    }
+    .c7n-pro-modal-header {
+      border-bottom: 1px solid #505255;
+    }
+    .c7n-pro-modal-title {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 22px;
+      color: #fff;
+    }
+    .c7n-pro-select-wrapper,
+    .c7n-pro-input-wrapper,
+    .c7n-pro-input-number-wrapper {
+      height: 48px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .c7n-pro-select,
+    .c7n-pro-input,
+    .c7n-pro-input-number {
+      height: 48px;
+      font-size: 18px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .icon-search {
+      top: 0 !important;
+    }
+    .icon-search::before,
+    .icon-close::before {
+      font-size: 18px !important;
+      color: #fff !important;
+    }
+  }
+  .buttons {
+    margin-top: 50px;
+    text-align: right;
+    :global {
+      .c7n-pro-btn {
+        height: 55px;
+        padding: 0 40px;
+        background: #26292c;
+        border: 2px solid #000;
+        box-sizing: border-box;
+        box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.08);
+        font-size: 18px;
+        color: #fff;
+      }
+      .c7n-pro-btn-primary {
+        background: linear-gradient(180deg, #018e85 0%, #004c48 100%);
+      }
+    }
+  }
+}

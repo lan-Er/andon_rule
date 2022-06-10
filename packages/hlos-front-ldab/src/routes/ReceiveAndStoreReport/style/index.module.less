@@ -1,0 +1,104 @@
+/*
+ * @Description: 
+ * @Author: taotao.zhu@hand-china.com
+ * @Date: 2020-11-02 14:31:51
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-04-28 17:05:25
+ */
+
+.content-report {
+  .top-search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .top-search-left {
+      flex: 3;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .search-left-lineOne,
+      .search-left-lineTwo,
+      .search-left-lineThree {
+        flex: 1;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .search-left-lineOne {
+        :global {
+          .c7n-pro-calendar-picker-wrapper {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .top-search-right {
+      flex: 1;
+      height: 150px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .search-right-lineOne {
+        flex: 1;
+        display: flex;
+        width: 75%;
+        height: 33%;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .search-right-lineTwo {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1;
+        width: 100%;
+        height: 33%;
+        justify-content: flex-start;
+        align-items: center;
+        .lineTwo-span {
+          flex: 2;
+          text-align: center;
+          align-self: center;
+        }
+        .lineTwo-div {
+          flex: 5;
+        }
+      }
+      .search-right-lineThree {
+        display: flex;
+        flex-wrap: nowrap;
+        flex: 1;
+        width: 100%;
+        height: 33%;
+        justify-content: flex-start;
+        align-items: center;
+        .lineThree-span {
+          flex: 2;
+          text-align: center;
+          align-self: center;
+        }
+        .lineThree-div {
+          flex: 5;
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          .lineThree-switch {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+  :global {
+    .c7n-pro-pagination {
+      float: right;
+    }
+  }
+}

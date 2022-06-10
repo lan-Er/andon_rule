@@ -1,0 +1,188 @@
+.production-scrap-main-left {
+  display: flex;
+  flex-direction: column;
+  .input-area {
+    flex: 1;
+    padding: 16px 20px;
+    .mo-input {
+      display: flex;
+      align-items: center;
+      .scan-icon {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        background: #1C879C;
+        text-align: center;
+      }
+      :global {
+        .c7n-pro-input-wrapper {
+          width: 100%;
+          input {
+            height: 64px;
+            border: 2px solid #1C879C;
+            border-radius: 0;
+            font-weight: 500;
+            font-size: 24px;
+            color: #333;
+          }
+        }
+      }
+    }
+    .execute {
+      margin: 24px 0;
+      font-size: 18px;
+      .qty, .uom {
+        margin-left: 12px;
+        font-weight: 500;
+        color: #1C879C;
+      }
+      .qty {
+        font-size: 30px;
+      }
+      .uom {
+        font-size: 20px;
+      }
+    }
+    .lot-tag-input {
+      :global {
+        .c7n-pro-input-wrapper {
+          width: 100%;
+          input {
+            height: 48px;
+            padding-right: 40px;
+            border: 1px solid #1C879C;
+            font-size: 20px;
+          }
+        }
+        .c7n-pro-input-suffix {
+          margin-right: 16px;
+        }
+      }
+    }
+    .lot-tag-list-wrapper {
+      .list-title {
+        display: flex;
+        margin-top: 16px;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #E1E1E1;
+        >div {
+          width: 50%;
+          padding-left: 16px;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+      .list {
+        .list-item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 40px;
+          line-height: 40px;
+          border-bottom: 1px solid #E1E1E1;
+          font-size: 16px;
+          :global {
+            .c7n-pro-input-number-wrapper {
+              width: 100px;
+            }
+          }
+          >div {
+            width: 50%;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            .uom {
+              margin-left: 24px;
+              color: #999;
+            }
+          }
+        }
+      }
+      .list-empty {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 18px;
+        .empty-message {
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .empty-confirm {
+          color: #1C879C;
+        }
+      }
+    }
+    .qty-input {
+      .qty-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+      :global {
+        .c7n-pro-input-number-wrapper {
+          input {
+            height: 56px;
+            font-size: 32px;
+            text-align: center;
+          }
+        }
+        .c7n-pro-input-number-group-after {
+          width: 56px;
+          height: 56px;
+          line-height: 56px;
+          padding: 0 16px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .btns{
+    flex: 0 0 88px;
+    width: 100%;
+    height: 88px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #fff;
+    border-top: 1px solid #E1E1E1;
+    z-index: 1;
+    >div:first-child {
+      span {
+        font-size: 18px;
+        color: #1C879C;
+        cursor: pointer;
+        margin-left: 9px;
+      }
+      span + span {
+        margin-left: 24px;
+      }
+      &.disabled {
+        span {
+          color: #999;
+          cursor: pointer;
+          
+        }
+      }
+    }
+    :global {
+      .c7n-pro-btn {
+        width: 180px;
+        height: 56px;
+        font-weight: 500;
+        font-size: 24px;
+        background: #1C879C;
+        color: #fff;
+      }
+      .c7n-pro-btn-disabled {
+        background: #999;
+      }
+    }
+  }
+}

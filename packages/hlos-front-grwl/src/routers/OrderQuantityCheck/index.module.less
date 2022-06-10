@@ -1,0 +1,39 @@
+.ship-plat-form-item-print {
+  @media print {
+    & {
+      display: block;
+      @page {
+        size: A4 landscape portrait !important;
+      }
+    }
+    html,
+    body {
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      height: auto !important;
+      color: #000;
+    }
+    table {
+      border-color: #000;
+      color: #000;
+      tr td {
+        font-size: 10px;
+        page-break-inside: avoid;
+      }
+    }
+    display: block;
+    .delegate-in-out-print-modal-footer {
+      page-break-after: always !important;
+      border-bottom: 1px solid #000;
+    }
+    .delegate-in-out-print-modal-footer + div {
+      margin-top: 20px;
+    }
+    .print-every-one {
+      page-break-before: always !important;
+    }
+  }
+  width: 100%;
+  display: none;
+}

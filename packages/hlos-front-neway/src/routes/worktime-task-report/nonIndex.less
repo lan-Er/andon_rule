@@ -1,0 +1,129 @@
+.dispatch-order-report-content {
+  flex: 1;
+  :global {
+    p {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    .c7n-row-flex {
+      height: 100%;
+    }
+  }
+
+  .content-left,
+  .content-right {
+    background-color: #001f2e;
+    border: 1px solid #425057;
+    color: #eceef0;
+    padding: 10px 20px;
+    position: relative;
+    // min-height: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .content-info-top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      .title {
+        font-size: 16px;
+      }
+
+      .order-code {
+        font-size: 18px;
+      }
+
+      .order-status {
+        background-color: #199ed8;
+        border-radius: 4px;
+        padding: 0 6px;
+        margin-left: 10px;
+      }
+
+      .right-box {
+        border-radius: 0.5em;
+        background-color: #425660;
+        width: 36%;
+        padding: 5px 10px;
+        height: 70px;
+
+        .order-qty {
+          font-size: 16px;
+          overflow: hidden;
+
+          span {
+            &:last-child {
+              float: right;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .quantity-bar {
+      width: 100%;
+      text-align: center;
+      color: #001f2e;
+      // padding: 0 20px;
+
+      span {
+        display: inline-block;
+        padding: 2px 0;
+
+        &:first-child {
+          background-color: #00cd3e;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+
+        &:last-child {
+          background-color: #ffff00;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+  }
+
+  .content-left {
+    margin-right: 16px;
+
+    .content-info-middle {
+      flex: 1;
+      .order-info {
+        // min-height: 26px;
+        // line-height: 20px;
+        background-color: #425660;
+        border-radius: 8px;
+        margin-top: 12px;
+        padding: 4px 10px;
+      }
+    }
+
+    .quantity-bar {
+      span {
+        width: 33%;
+
+        &:nth-child(2) {
+          background-color: #d3d8d4;
+        }
+      }
+    }
+  }
+
+  .content-right {
+    .quantity-bar {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      padding: 0 20px;
+      span {
+        width: 50%;
+      }
+    }
+  }
+}

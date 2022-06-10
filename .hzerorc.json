@@ -1,0 +1,46 @@
+{
+  "packages": [
+    {
+      "name": "hlos-front-zmdc"
+    },
+    {
+      "name": "hlos-front-tongfu"
+    },
+    {
+      "name": "hlos-front-zplan"
+    },
+    {
+      "name": "hlos-front-senyu"
+    },
+    {
+      "name": "hlos-front-jiachen"
+    },
+    {
+      "name": "hlos-front-kmjx"
+    },
+    {
+      "name": "hlos-front-neway"
+    },
+    {
+      "name": "hlos-front-grwl"
+    },
+    {
+      "name": "hlos-front-raumplus"
+    },
+    {
+      "name": "hlos-front-hg"
+    },
+    {
+      "name": "hlos-front-lwhs"
+    },
+    {
+      "name": "hlos-front-lsub"
+    },
+    {
+      "name": "hlos-front-lisp"
+    },
+    {
+      "name": "hlos-front-cs"
+    }
+  ]
+}

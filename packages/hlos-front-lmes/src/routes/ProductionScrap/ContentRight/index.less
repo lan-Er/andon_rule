@@ -1,0 +1,128 @@
+.production-scrap-main-right {
+  padding: 16px 20px;
+  .production-scrap-main-right-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    span {
+      margin-left: 6px;
+    }
+  }
+  .production-scrap-main-right-list {
+    .list-item {
+      display: flex;
+      padding: 16px 20px;
+      margin-top: 16px;
+      background: #fff;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+      cursor: pointer;
+      .item-left {
+        width: 75.6%;
+        display: flex;
+        padding-right: 16px;
+        border-right: 1px solid #E3E3E3;
+        >img {
+          width: 53px;
+          height: 46px;
+          margin-right: 20px;
+        }
+        >div {
+          width: 100%;
+          >div {
+            display: flex;
+          }
+        }
+        .order{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          font-size: 14px;
+          >div:first-child {
+            display: flex;
+            .mo {
+              line-height: 12px;
+              text-decoration-line: underline;
+              color: #1C879C;
+              cursor: pointer;
+            }
+            .task {
+              line-height: 12px;
+              margin-left: 24px;
+              color: #666;
+            }
+          }
+          .status {
+            height: 24px;
+            padding: 2px 8px;
+            background: #E9F3FE;
+            border-radius: 4px;
+            color: #215CAE;
+          }
+        }
+        .item {
+          line-height: 24px;
+          margin: 6px 0 16px 0;
+          font-weight: 500;
+          font-size: 24px;
+        }
+        .other {
+          >div {
+            padding: 5px 8px;
+            background: #F5F5F5;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #666;
+          }
+          >div + div {
+            margin-left: 8px;
+          }
+        }
+      }
+      .item-right {
+        width: 24.4%;
+        .qty-title {
+          font-size: 14px;
+          color: #666;
+          text-align: center;
+        }
+        .qty {
+          font-weight: 500;
+          font-size: 30px;
+          text-align: center;
+          .uom {
+            margin-left: 8px;
+            font-size: 20px;
+          }
+        }
+      }
+      .item-delete {
+        i {
+          line-height: 88px;
+          cursor: pointer;
+          text-align: right;
+        }
+      }
+      &.active {
+        border: 1px solid #1C879C;
+        background: linear-gradient(0deg, rgba(28, 135, 156, 0.05), rgba(28, 135, 156, 0.05)), #fff;
+      }
+    }
+  }
+  .production-scrap-main-right-empty {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 18px;
+    .empty-message {
+      font-size: 20px;
+      font-weight: 500;
+    }
+    .empty-confirm {
+      color: #1C879C;
+    }
+  }
+}

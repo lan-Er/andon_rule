@@ -1,0 +1,64 @@
+.my-content-bottom-supplier-list {
+  .crossed-hand {
+    cursor: pointer;
+  }
+  height: 220px;
+  margin-top: 20px;
+  width: 100%;
+  padding-top: 8px;
+  box-sizing: border-box;
+  background-image: linear-gradient(180deg, rgba(60, 173, 217, 0.29) 0%, rgba(60, 173, 217, 0) 98%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  .my-content-bottom-list-every {
+    height: 100%;
+    width: calc(100% / 4);
+    padding: 0 14px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    .details-segmentation {
+      position: absolute;
+      top: 9%;
+      left: 0;
+      width: 1px;
+      height: 80%;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .my-content-bottom-list-every-header {
+      height: 76px;
+      display: flex;
+      text-align: right;
+      .my-content-bottom-list-every-header-img,
+      .my-content-bottom-list-every-header-title {
+        flex: 1;
+      }
+      .my-content-bottom-list-every-header-title {
+        text-align: left;
+        margin-left: 24px;
+        > div {
+          margin-top: 18px;
+          font-size: 12px;
+          color: #50ceff;
+          line-height: 20px;
+        }
+        span {
+          font-size: 26px;
+          color: #fff;
+        }
+      }
+    }
+    .my-content-bottom-list-every-detail {
+      margin-top: 10px;
+      display: table;
+      width: 100%;
+      > div {
+        display: table-cell;
+        span {
+          margin-left: 6px;
+          font-size: 13px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}

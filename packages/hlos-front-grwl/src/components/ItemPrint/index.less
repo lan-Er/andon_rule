@@ -1,0 +1,41 @@
+.code-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 3px;
+  box-sizing: border-box;
+  page-break-after: always;
+  padding-top: 1mm;
+  overflow: hidden;
+  .code-left {
+    width: 65px;
+    height: 65px;
+    margin: 4px 4px 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+  .code-right {
+    flex: 1;
+    font-size: 12px;
+    height: 65px;
+    margin-top: 2px;
+    line-height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .code-right-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .code-right-bottom {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      word-break: break-all;
+      min-width: 0;
+      overflow: hidden;
+    }
+  }
+}

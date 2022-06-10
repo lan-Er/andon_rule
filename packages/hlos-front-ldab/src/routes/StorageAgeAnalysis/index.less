@@ -1,0 +1,62 @@
+.storage-age-analysis {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: #fff;
+    .header-left {
+      > span {
+        margin-left: 12px;
+        font-size: 11px;
+        line-height: 12px;
+        color: #999;
+      }
+      :global {
+        .c7n-pro-select {
+          border: none;
+          width: 118px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .c7n-pro-select:focus {
+          box-shadow: none;
+        }
+        .c7n-pro-select-clear-button {
+          display: none;
+        }
+      }
+    }
+  }
+  .query {
+    padding: 13px 13px 5px 9px;
+    :global {
+      .c7n-pro-field-wrapper {
+        margin-right: 8px;
+      }
+      .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+        background: #00b3a9;
+        border-color: #00b3a9;
+      }
+    }
+  }
+  .list {
+    padding: 20px 16px;
+    background: #fff;
+    :global {
+      .c7n-pro-table-wrapper {
+        margin-top: 17px;
+      }
+    }
+  }
+  .detail-list {
+    margin-top: 21px;
+    padding: 20px 16px;
+    background: #fff;
+    > div {
+      margin-bottom: 9px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

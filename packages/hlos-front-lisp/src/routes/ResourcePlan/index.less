@@ -1,0 +1,40 @@
+.resource-plan {
+  :global {
+    .c7n-pro-select {
+      height: 36px;
+      line-height: 36px;
+    }
+  }
+
+  .operation-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .operation-content {
+    // position: relative;
+    background: #f8f9fb;
+    height: auto;
+  }
+
+  .search-header {
+    position: sticky;
+    top: 0;
+    padding: 0.1rem 0;
+    background: #fff;
+    z-index: 500;
+  }
+
+  .task-list-content {
+    position: sticky;
+    top: 60px;
+    background: #e0e0e0;
+    z-index: 500;
+
+    :global {
+      .c7n-collapse-content {
+        box-shadow: 1px 2px 5px 2px rgba(77, 77, 77, 0.4);
+      }
+    }
+  }
+}

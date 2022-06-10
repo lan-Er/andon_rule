@@ -1,0 +1,49 @@
+.lmes-production-plans-content {
+  .active-line {
+    :global {
+      .c7n-performance-table-cell {
+        background-color: #f5f5f5 !important;
+      }
+    }
+  }
+  :global {
+    .c7n-pro-pagination {
+      text-align: right;
+    }
+    .c7n-pro-select-multiple {
+      .c7n-pro-select {
+        > ul {
+          width: 100%;
+          height: 28px;
+          overflow: hidden;
+          li:not(.c7n-pro-select-multiple-block) {
+            display: none;
+          }
+        }
+      }
+      .c7n-pro-select-multiple .c7n-pro-select:not(:last-child) {
+        padding-right: 0;
+      }
+    }
+  }
+  .lmes-production-plans-query {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: flex-start;
+    .query-btns {
+      display: flex;
+      margin: 12px 0 0 8px;
+    }
+  }
+  .lmes-production-plans-line-table {
+    margin-top: 10px;
+  }
+}
+.lmes-production-plans-progress-modal {
+  width: 800px;
+  :global {
+    .c7n-pro-modal-body {
+      height: 500px !important;
+    }
+  }
+}

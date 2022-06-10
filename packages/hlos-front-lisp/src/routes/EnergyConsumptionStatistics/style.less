@@ -1,0 +1,151 @@
+.energy-consumption-statistics {
+  background: #000;
+  @font-face {
+    font-family: LiquidCrystal-ExBold;
+    src: url('../../assets/LiquidCrystal-ExBold.otf');
+  }
+  @font-face {
+    font-family: PangMenZhengDao;
+    src: url('../../assets/PangMenZhengDao.ttf');
+  }
+  p {
+    margin-bottom: 0;
+  }
+  .header {
+    width: 100%;
+    height: 76px;
+    background: url(./assets/header.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 15px;
+    .title {
+      font-size: 32px;
+      color: #05fce5;
+      letter-spacing: 0.7px;
+      text-align: center;
+      height: 23px;
+      line-height: 23px;
+      font-family: PangMenZhengDao, serif;
+    }
+    .time {
+      margin-top: 5px;
+      text-align: center;
+      font-size: 16px;
+      color: #00fce5;
+    }
+  }
+  .wrap {
+    width: 425px;
+    height: calc(100vh - 76px);
+    position: absolute;
+    background-image: linear-gradient(270deg, rgba(2, 12, 24, 0) 0%, #01050a 100%);
+    z-index: 1001;
+  }
+  .wrap-right {
+    top: 0;
+    right: 0;
+    transform: rotate(-180deg);
+    background-image: linear-gradient(270deg, rgba(2, 12, 24, 0) 0%, #01050a 100%);
+  }
+  .main {
+    width: 100%;
+    height: calc(100vh - 76px);
+    position: relative;
+    .main-blur {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url(./assets/content-bg.png) no-repeat;
+      background-size: 100% 100%;
+      filter: blur(5px);
+      opacity: 0.5;
+    }
+    .statistics {
+      width: 100%;
+      height: 110px;
+      position: absolute;
+      background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.57) 76%);
+      display: flex;
+      justify-content: space-evenly;
+      .statistics-item {
+        display: flex;
+        align-items: center;
+        > img {
+          width: 67px;
+          height: 67px;
+        }
+        .sub {
+          margin-left: -34px;
+          font-size: 20px;
+          color: #fff;
+          letter-spacing: 1px;
+          line-height: 23px;
+          font-family: PangMenZhengDao, serif;
+          .english {
+            opacity: 0.7;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            line-height: 23px;
+          }
+        }
+        .num {
+          margin-left: 20px;
+          font-size: 39px;
+          color: #00fce5;
+          letter-spacing: 6.82px;
+          line-height: 23px;
+          font-family: LiquidCrystal-ExBold, serif;
+          > span {
+            font-size: 25px;
+            letter-spacing: 4.38px;
+            line-height: 23px;
+            font-family: DINAlternate-Bold, serif;
+          }
+        }
+      }
+    }
+    .footer-chart {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 300px;
+      z-index: 1002;
+      background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.18) 76%);
+      .title {
+        position: absolute;
+        left: 35.5px;
+        bottom: 234px;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 0.9px;
+        line-height: 23px;
+        font-family: PangMenZhengDao, serif;
+        > span {
+          opacity: 0.7;
+          font-size: 12px;
+          color: #fff;
+          line-height: 23px;
+          .circle {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2ac5a9;
+            margin-right: 12px;
+            &.red {
+              background: #ff4b4b;
+            }
+          }
+        }
+        > span:nth-child(2) {
+          margin-left: 157px;
+          margin-right: 20px;
+        }
+      }
+      #energy-chart {
+        width: 100%;
+        height: 264px;
+        margin-top: 36px;
+      }
+    }
+  }
+}

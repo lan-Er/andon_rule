@@ -1,0 +1,162 @@
+@media print {
+  body {
+    .delivery-maintain-print {
+      // // 此处一定要加模块名，避免全局样式污染
+      padding: 0 1.7cm;
+      color: #000;
+      margin: 0;
+      box-sizing: border-box;
+      // @page {
+      //   size: A4 landscape;
+      //   margin: 40pt 0;
+      //   overflow: hidden;
+      // }
+      > header {
+        page-break-before: always;
+      }
+      table {
+        color: #000;
+      }
+    }
+  }
+}
+.delivery-maintain-print {
+  font-family: 'SimHei', sans-serif !important;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 0 60px;
+  color: #000;
+  header {
+    display: flex;
+    .maintain-print-title {
+      flex: 1;
+      text-align: center;
+    }
+    > div {
+      width: 150px;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+      .print-title {
+        text-align: center;
+        font-size: 24px;
+        + p {
+          text-align: center;
+        }
+      }
+    }
+    div:last-child {
+      text-align: right;
+    }
+  }
+  .transfer-order {
+    margin-top: 10px;
+    display: flex;
+    > div {
+      flex: 1;
+    }
+    .send-order-info {
+      font-size: 12px;
+      .send-order-name {
+        margin: auto !important;
+        flex: 1;
+        text-align: left !important;
+        padding: 10px 0;
+        font-size: 16px;
+      }
+      > div {
+        display: flex;
+        margin: 0;
+        // margin-left: 20px;
+        p {
+          margin: 0;
+          padding: 5px 0;
+        }
+        p:first-child {
+          // width: 100px;
+          // text-align: center;
+          margin-right: 5px;
+        }
+      }
+      div:first-child {
+        // text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .send-order {
+      text-align: right;
+      div {
+        // text-align: center;
+      }
+    }
+  }
+
+  .transfer-card-print-content {
+    margin-top: 10px;
+    .transfer-card-print-content-list {
+      width: 100%;
+      text-align: center;
+      border: 1px solid #000;
+      font-size: 12px;
+      margin: 10px 0;
+      // transform: scale(0.8, 0.9);
+      transform-origin: 0 center;
+      tr {
+        page-break-inside: avoid;
+        td:nth-child(1),
+        td:nth-child(2),
+        td:nth-child(3),
+        td:nth-child(4),
+        td:nth-child(5),
+        td:nth-child(6) {
+          padding: 6px;
+          word-break: break-word;
+        }
+        td:nth-child(4) {
+          width: 100px;
+          text-align: center;
+        }
+        td:nth-child(7),
+        td:nth-child(8),
+        td:nth-child(9),
+        td:nth-child(10) {
+          width: 60px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .transfer-card-print-footer {
+    margin-top: 10px;
+    > div {
+      p:first-child {
+        margin-bottom: 0;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+    }
+    div:first-child {
+      display: flex;
+      margin-bottom: 20px;
+      div {
+        flex: 1;
+      }
+    }
+    .transfer-card-print-footer-car {
+      display: flex;
+      div {
+        flex: 1;
+      }
+    }
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

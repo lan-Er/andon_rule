@@ -1,0 +1,24 @@
+.zcom-delivey-apply-list-query {
+  display: inline-flex;
+  :global {
+    .c7n-pro-select {
+      > ul {
+        width: 100%;
+        height: 28px;
+        overflow: hidden;
+      }
+    }
+    .c7n-pro-select-multiple .c7n-pro-select:not(:last-child) {
+      padding-right: 0;
+    }
+  }
+}
+.delivery-apply-list-content {
+  :global {
+    .c7n-pro-output-wrapper {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

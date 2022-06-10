@@ -1,0 +1,107 @@
+.purchase-return-order-platform-modal {
+  width: 912px !important;
+  // .c7n-pro-modal-body {
+  //   height: 500px !important;
+  //   overflow: auto;
+  //   display: grid;
+  // }
+}
+
+// createModal.js
+.modal-wrapper {
+  .modal-content {
+    max-height: 500px !important;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    .order-type-card {
+      border: 1px solid #ddd;
+      width: 275px;
+      height: 113px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .left {
+        margin-right: 18px;
+      }
+      .right {
+        .title {
+          font-size: 18px;
+          font-weight: 500;
+          color: #333;
+        }
+        .description {
+          color: #999;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .order-type-card-active {
+      border: 2px solid #00b3a9;
+      background: rgba(0, 179, 169, 0.06);
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    .confirm-button {
+      background-color: #00b3a9;
+      color: #fff;
+    }
+  }
+}
+
+// createPage
+.return-goods-org {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .small-block {
+    display: block;
+    width: 4px;
+    height: 20px;
+    background-color: #333;
+    margin-right: 5px;
+  }
+}
+
+.show-table-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  .order-line {
+    max-width: 49%;
+    .order-title {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+:global {
+  .c7n-pro-select-multiple {
+    .c7n-pro-select {
+      ul {
+        height: 28px;
+        overflow: hidden;
+        width: 100%;
+      }
+    }
+  }
+}
+.lwms-purchase-return-order-content {
+  .purchase-tab-content,
+  .purchase-line-tab-content {
+    :global {
+      .c7n-pro-pagination {
+        float: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.de-header {
+  width: 100%;
+  height: 86px;
+  display: flex;
+  > section {
+    background-color: antiquewhite;
+    flex: 1;
+    height: 100%;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 8px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    > span:nth-child(1) {
+      font-size: 14px;
+    }
+    > span:nth-child(2) {
+      display: block;
+      font-size: 32px;
+    }
+  }
+  > section:nth-child(1) {
+    background: url('../../assets/h1.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+  > section:nth-child(2) {
+    background: url('../../assets/h2.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+  > section:nth-child(3) {
+    background: url('../../assets/h3.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+  > section:nth-child(4) {
+    background: url('../../assets/h4.png') 0 0 no-repeat;
+    background-size: cover;
+    margin-right: 0;
+  }
+}

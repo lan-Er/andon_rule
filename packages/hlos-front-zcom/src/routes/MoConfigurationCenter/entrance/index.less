@@ -1,0 +1,40 @@
+.zcom-mo-configuration-center {
+  .conf-title {
+    font-size: 14px;
+    border-left: 3px solid #09f;
+    padding: 5px 10px;
+  }
+  .conf-content {
+    margin: 20px;
+    > div {
+      display: flex;
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 10px;
+      p {
+        margin: auto 0;
+      }
+      p:last-child {
+        color: #09f;
+        font-size: 12px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+    > p {
+      color: #999;
+      font-size: 12px;
+    }
+  }
+  .zcom-configuration-tab {
+    display: flex;
+    > div {
+      margin-left: 15px;
+    }
+    :global {
+      .c7n-menu {
+        width: 140px;
+      }
+    }
+  }
+}

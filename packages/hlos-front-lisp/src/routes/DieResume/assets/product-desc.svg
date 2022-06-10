@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>产品描述</title>
+    <g id="模具履历" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="履历" transform="translate(-725.000000, -229.000000)">
+            <g id="产品描述" transform="translate(724.000000, 228.000000)">
+                <polygon id="Shape" points="0 0 14 0 14 14 0 14"></polygon>
+                <path d="M10.3584596,2.81658249 L5.77678684,7.39825525 L5.57054736,8.42945264 L6.60174475,8.22321316 L11.1834175,3.6415404 L10.3584596,2.81658249 Z M12.8333333,3.6415404 L7.1769255,9.29794823 L4.08333333,9.91666667 L4.70205177,6.8230745 L10.3584596,1.16666667 L12.8333333,3.6415404 Z" id="Shape" fill="#CACCD0" fill-rule="nonzero"></path>
+                <polygon id="Shape" fill="#CACCD0" fill-rule="nonzero" points="11.6666667 11.6666667 11.6666667 5.83333333 12.8333333 5.83333333 12.8333333 12.8333333 1.16666667 12.8333333 1.16666667 1.16666667 8.16666667 1.16666667 8.16666667 2.33333333 2.33333333 2.33333333 2.33333333 11.6666667"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

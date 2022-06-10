@@ -1,0 +1,130 @@
+.mixinTitle () {
+  > .title {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    height: 15.26%;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 33.33%;
+      background-color: #4f7de7;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+}
+
+.page-content {
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 8px;
+  min-width: 800px;
+  min-height: 550px;
+  overflow: hidden;
+  background-color: rgb(246, 246, 246);
+
+  .andonPieSignBoardWrap,
+  .andonLineSignBoardWrap {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    .mixinTitle();
+    background-color: white;
+    .left {
+      flex: 1;
+    }
+  }
+
+  .andonPieSignBoardWrap {
+    width: 33%;
+    height: 45.2%;
+    margin-right: 1%;
+    .andonPieSignBoard {
+      flex: 1;
+    }
+  }
+
+  .andonLineSignBoardWrap {
+    width: 66%;
+    height: 45.2%;
+    .andonLineSignBoard {
+      flex: 1;
+    }
+  }
+
+  .andonSignBoardPending,
+  .andonSignBoardProcessing {
+    width: 49.5%;
+    float: left;
+    height: 52.6%;
+    margin-top: 8px;
+    background-color: white;
+    .mixinTitle();
+  }
+
+  .andonSignBoardPending {
+    margin-right: 1%;
+  }
+}
+
+.itemList {
+  margin: 0 1.35%;
+  height: 82%;
+  overflow: hidden;
+
+  .andonCell {
+    box-sizing: border-box;
+    .gridWrap {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 16px;
+      grid-column-gap: 16px;
+    }
+    .itemWrap {
+      display: flex;
+      flex-direction: column;
+      height: 88px;
+      .title {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2.63%;
+        padding: 1.32% 5% 1.32% 0;
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+      .detail {
+        padding: 1.32% 2.63%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .detailMsg {
+          max-height: 35px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          flex: 1;
+        }
+        .others {
+          color: #aaadba;
+        }
+      }
+    }
+    .itemBorder {
+      border: 1px solid #f1f1f1;
+    }
+  }
+}
+
+.pending {
+  background-color: #fffafa;
+}
+
+.processing {
+  background-color: #f4fbfb;
+}

@@ -1,0 +1,22 @@
+.my-marquee-list {
+  width: 100%;
+  margin: 0;
+  .need-marquee {
+    @keyframes myMarquee {
+      0% {
+        transform: translateX(0);
+      }
+      10% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    animation: myMarquee 6s linear infinite;
+  }
+  overflow: hidden;
+}

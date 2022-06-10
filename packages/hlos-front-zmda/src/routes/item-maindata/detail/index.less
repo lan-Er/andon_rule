@@ -1,0 +1,72 @@
+.zmda-org-table {
+  :global {
+    .c7n-pro-table-wrapper {
+      width: 700px;
+    }
+  }
+}
+.zmda-attribute-table {
+  :global {
+    .c7n-pro-table-wrapper {
+      width: 700px;
+    }
+    .c7n-pro-output {
+      .c7n-pro-output-multiple-block:not(:first-child) {
+        &:before {
+          content: '|';
+          margin-right: 0.08rem;
+        }
+      }
+    }
+    .c7n-pro-output-multiple-block {
+      background: none;
+      color: black;
+      margin: 0;
+      padding: 0 0 0 0.08rem;
+    }
+  }
+}
+.zmda-lov-multiple {
+  :global {
+    .c7n-pro-select {
+      ul {
+        line-height: 0.3rem;
+        .c7n-pro-select-multiple-block:not(:first-child) {
+          &:before {
+            content: '|';
+            margin-right: 0.08rem;
+          }
+        }
+      }
+      .c7n-pro-select-multiple-block {
+        background-color: #feffe6;
+        color: black;
+        margin: 0;
+        padding: 0 0 0 0.08rem;
+        div:not(:last-child) {
+          max-width: 100%;
+        }
+      }
+      .icon-cancel {
+        display: none;
+      }
+      .icon-cancel:before {
+        content: none;
+      }
+    }
+  }
+}
+.conversion-rate-area {
+  display: flex !important;
+  align-items: center;
+  height: 0.36rem;
+  .conversion-rate-area-maohao {
+    margin: 0 5px;
+  }
+  :global {
+    .c7n-pro-input-number {
+      height: 0.36rem;
+      width: 0.7rem;
+    }
+  }
+}

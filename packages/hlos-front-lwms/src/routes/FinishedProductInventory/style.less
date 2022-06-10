@@ -1,0 +1,474 @@
+.lwms-finished-product-inventory {
+  p {
+    margin-bottom: 0;
+  }
+  .lwms-finished-product-inventory-header {
+    width: 100%;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #076476 0%, #1d889d 100%);
+    font-size: 21px;
+    color: #fff;
+  }
+  .lwms-finished-product-inventory-sub-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    background-color: #fff;
+    .sub-header-avator {
+      img {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 2px solid #3f8795;
+      }
+    }
+    .c7n-pro-select-wrapper,
+    .c7n-pro-select {
+      height: 48px;
+    }
+    .c7n-pro-select-wrapper {
+      width: 18.67vw;
+      .c7n-pro-select-suffix {
+        margin-right: 18px;
+        .icon {
+          transform: scale(2);
+        }
+      }
+      .c7n-pro-select-clear-button {
+        .icon-close {
+          position: absolute;
+          right: 30px;
+        }
+      }
+      .c7n-pro-select {
+        font-size: 20px;
+        color: #999;
+        padding-left: 40px;
+      }
+    }
+    .lov-suffix-wrap {
+      position: relative;
+      > img {
+        position: absolute;
+        top: 13px;
+        right: 8px;
+        cursor: pointer;
+        z-index: 1;
+      }
+    }
+  }
+  .lwms-finished-product-inventory-search {
+    padding: 16px;
+    .c7n-pro-select-wrapper {
+      width: 17%;
+      margin-right: 2.3%;
+      .c7n-pro-select-suffix {
+        .icon {
+          transform: scale(2);
+        }
+      }
+      .c7n-pro-select {
+        height: 48px;
+        font-size: 20px;
+        color: #333;
+        &::placeholder {
+          color: #999;
+        }
+        ul {
+          height: 46px;
+          overflow: hidden;
+          width: 100%;
+          li {
+            height: 42px;
+            line-height: 42px;
+          }
+        }
+      }
+      .c7n-pro-select-placeholder {
+        font-size: 20px;
+        color: #999;
+      }
+    }
+    .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+      width: 123px;
+      height: 48px;
+      background: #1c879c;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  .lwms-finished-product-inventory-list {
+    padding: 0 16px;
+    height: calc(100vh - 352px);
+    overflow-y: scroll;
+    .lwms-finished-product-inventory-list-item {
+      display: grid;
+      // grid-template-columns: 45% 28% 27%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 88px;
+      align-items: center;
+      margin-bottom: 19px;
+      background-color: #fff;
+      padding: 16px;
+      font-size: 18px;
+      color: #666;
+      border: 1px solid #ccc;
+      .item-left {
+        display: flex;
+        align-items: center;
+        .c7n-checkbox-inner {
+          width: 24px;
+          height: 24px;
+          border: 1px solid #999;
+        }
+        .c7n-checkbox-inner::after {
+          left: 8px;
+          top: 3px;
+        }
+        img {
+          margin: 0 16px;
+        }
+        > span {
+          font-size: 28px;
+          text-align: center;
+        }
+        .qty-block {
+          width: 254px;
+          height: 56px;
+          line-height: 56px;
+          background: #fff;
+          border: 1px solid #ccc;
+          color: #1c879c;
+        }
+        .on-hand-qty {
+          display: inline-block;
+          width: 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          background-color: #1c879c;
+          color: #fff;
+          margin-left: 16px;
+          margin-right: 8px;
+        }
+      }
+      .item-center {
+        p {
+          font-size: 22px;
+          color: #999;
+        }
+        p:first-child {
+          font-size: 28px;
+          color: #333;
+          font-weight: 500;
+        }
+      }
+      .item-right {
+        color: #999;
+      }
+    }
+  }
+  .lwms-finished-product-inventory-footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    padding: 16px 23.5%;
+    background: linear-gradient(to bottom, #adaeb0 0%, #c4c5c7 100%);
+    .icon {
+      width: 88px;
+      height: 88px;
+      margin-right: 32px;
+      background-image: linear-gradient(0deg, #cdcecf 0%, #e5e7e9 100%);
+      img {
+        margin: 5px 20px 5.3px;
+      }
+      .line {
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(
+          90deg,
+          rgba(145, 145, 145, 0) 0%,
+          rgba(173, 173, 173, 0.49) 50%,
+          rgba(151, 151, 151, 0) 100%
+        );
+      }
+      .text {
+        margin-top: 2.7px;
+        font-size: 16px;
+        color: #051e2d;
+        text-align: center;
+      }
+    }
+    > div:last-child {
+      .icon:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.lwms-finished-product-inventory-modal {
+  width: 1265px;
+  p {
+    margin-bottom: 0;
+  }
+  .c7n-pro-modal-header {
+    padding: 17px 24px;
+    background: #ebebeb;
+    .c7n-pro-modal-title {
+      font-size: 22px;
+      color: #666;
+    }
+  }
+  .c7n-pro-modal-body {
+    .order-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+      > div {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .c7n-pro-input {
+        width: 300px;
+        height: 40px;
+        font-size: 22px;
+        color: #333;
+        border: 1px solid #999;
+        &.placeholder {
+          color: #999;
+        }
+      }
+      .input-scan {
+        position: relative;
+        border: 1px solid #979797;
+        .c7n-pro-input-wrapper {
+          width: 314px;
+        }
+        .c7n-pro-input {
+          width: 276px;
+          height: 48px;
+          border: none;
+          outline: none;
+          font-size: 20px;
+        }
+        .c7n-pro-input-placeholder {
+          color: #999;
+        }
+        .c7n-pro-input:focus {
+          box-shadow: none;
+        }
+        > img {
+          position: absolute;
+          right: 8px;
+          top: 12px;
+        }
+      }
+    }
+    .select-info {
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 3;
+      > div {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .c7n-pro-input {
+        width: 300px;
+        height: 40px;
+        font-size: 22px;
+        color: #333;
+        border: 1px solid #999;
+        &.placeholder {
+          color: #999;
+        }
+      }
+    }
+    .lwms-finished-product-inventory-modal-list {
+      table {
+        width: 1217px;
+        thead {
+          background-image: linear-gradient(0deg, #d5d5d5 0%, #e3e3e3 100%);
+          border: 1px solid #ccc;
+          font-size: 22px;
+          color: #1c879c;
+        }
+      }
+
+      .c7n-checkbox-inner {
+        width: 24px;
+        height: 24px;
+        margin-right: 32px;
+        border: 1px solid #b8b8b8;
+      }
+      .c7n-checkbox-inner::after {
+        left: 8px;
+        top: 3px;
+      }
+      tr {
+        border: 1px solid #ccc;
+        td,
+        th {
+          //width: 505px;
+          padding: 0 38px 0 32px;
+        }
+        td:first-child,
+        th:first-child {
+          width: 288px;
+          padding-left: 25px;
+        }
+        td:last-child,
+        th:last-child {
+          width: 224px;
+          padding-left: 40px;
+        }
+        th {
+          height: 44px;
+          .c7n-checkbox-inner {
+            margin-top: -5px;
+          }
+        }
+        td {
+          height: 68px;
+          font-size: 19px;
+          color: #031b2a;
+          > div {
+            display: inline-block;
+          }
+          .c7n-checkbox-inner {
+            margin-top: -5px;
+          }
+        }
+        .td-left {
+          > div {
+            width: 160px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        .td-center-lot {
+          display: flex;
+          align-items: center;
+          width: 505px;
+          span {
+            display: inline-block;
+          }
+          .on-hand-qty {
+            width: 110px;
+            box-sizing: border-box;
+            margin: 0 16px;
+            padding: 8px;
+            background-color: #076476;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        .td-center-tag {
+          width: 505px;
+          .qty-block {
+            margin-right: 16px;
+          }
+        }
+        .td-right {
+          width: 200px;
+        }
+        &.TAG {
+          td,
+          th {
+            width: 300px;
+          }
+          td:first-child,
+          th:first-child {
+            width: 437px;
+          }
+        }
+      }
+      tbody {
+        tr:nth-child(n) {
+          background: rgba(193, 193, 193, 0.18);
+        }
+      }
+    }
+    .lwms-finished-product-inventory-modal-footer {
+      width: 262px;
+      float: right;
+      margin-top: 32px;
+      button {
+        width: 123px;
+        height: 48px;
+        font-size: 20px;
+        &.c7n-pro-btn-default {
+          color: #999;
+        }
+        &.c7n-pro-btn-primary {
+          background: #1c879c;
+          color: #fff;
+        }
+      }
+      .c7n-pro-btn + .c7n-pro-btn {
+        margin-left: 16px;
+      }
+    }
+  }
+}
+.lwms-finished-product-inventory-remark-modal {
+  width: 530px;
+  .c7n-pro-modal-header {
+    background: #ebebeb;
+    padding: 17px 0 21px 24px;
+    .c7n-pro-modal-title {
+      font-size: 22px;
+      color: #666;
+    }
+  }
+  .c7n-pro-modal-body {
+    padding: 0 24px 24px 24px;
+    input {
+      font-size: 20px;
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0;
+      .c7n-pro-field {
+        margin-top: 24px;
+      }
+      input {
+        outline: none;
+        border: 1px solid #979797;
+        height: 48px;
+        font-size: 20px;
+        color: #999;
+      }
+    }
+  }
+  .c7n-pro-modal-footer {
+    border: none;
+    height: 112px;
+    padding: 32px;
+    button {
+      width: 123px;
+      height: 48px;
+      font-size: 20px;
+      color: #999;
+    }
+  }
+}

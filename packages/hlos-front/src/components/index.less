@@ -1,0 +1,33 @@
+/* 文字进度条组件 - Progress */
+.progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .progress-item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    &:last-child {
+      max-width: max-content;
+    }
+    .indicator {
+      width: 32px;
+      height: 32px;
+      font-size: 22.4px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      margin-right: 8px;
+    }
+    .indicator-text {
+      font-size: 22.4px;
+      color: #333;
+      text-align: left;
+      line-height: 31px;
+    }
+    .progress-line {
+      flex: 1;
+      margin-right: 21.2px;
+    }
+  }
+}

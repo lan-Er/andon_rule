@@ -1,0 +1,156 @@
+.lmes-offline-split {
+  p {
+    margin-bottom: 0;
+  }
+  .content {
+    padding: 0 23px;
+    .main {
+      display: flex;
+    }
+  }
+}
+.lmes-offline-split-login-modal {
+  width: 36.8vw;
+  :global {
+    .c7n-pro-modal-header {
+      background: #ebebeb;
+      .c7n-pro-modal-title {
+        font-size: 22px;
+        line-height: 31px;
+        color: #666;
+      }
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0;
+      .c7n-pro-select-wrapper,
+      .c7n-pro-calendar-picker-wrapper {
+        height: 48px !important;
+        margin-bottom: 28px;
+        input {
+          height: 48px;
+          font-size: 20px;
+          line-height: 28px;
+          color: #999;
+        }
+        .c7n-pro-select-suffix {
+          .icon-search::before {
+            font-size: 24px;
+            top: 0;
+          }
+          .icon-baseline-arrow_drop_down {
+            top: 0;
+          }
+          .icon-baseline-arrow_drop_down::before {
+            font-size: 24px;
+            color: #0c6b7e;
+          }
+        }
+      }
+      .c7n-pro-calendar-picker-wrapper {
+        width: 60.8%;
+        margin-right: 16px;
+        .c7n-pro-calendar-picker-suffix {
+          .icon-date_range::before {
+            top: 12px;
+            font-size: 24px;
+            color: #0c6b7e;
+          }
+        }
+      }
+    }
+    .c7n-pro-btn-primary {
+      width: 100%;
+      height: 56px !important;
+      margin: 12px 0 20px;
+      background-color: #0c6b7e !important;
+      border: none !important;
+      span {
+        font-size: 22px;
+        line-height: 31px;
+        color: #fff;
+      }
+    }
+  }
+  .date {
+    :global {
+      .c7n-pro-select-wrapper {
+        width: calc(39.2% - 16px);
+      }
+    }
+  }
+  .rework {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .exit-btn {
+    position: absolute;
+    top: 14px;
+    right: 24px;
+  }
+}
+.lmes-offline-split-item-modal {
+  :global {
+    .c7n-pro-modal-header {
+      background: #ebebeb;
+      border: none;
+      .c7n-pro-modal-title {
+        font-size: 22px;
+        line-height: 31px;
+        color: #666;
+      }
+    }
+    .c7n-pro-modal-body {
+      .c7n-pro-input-wrapper {
+        width: 100%;
+        height: 48px;
+        input {
+          height: 48px;
+          font-size: 20px;
+          line-height: 28px;
+        }
+      }
+    }
+    .c7n-pro-modal-footer {
+      border: none;
+      .c7n-pro-btn {
+        width: 123px;
+        height: 48px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .c7n-pro-btn-default {
+        color: #999;
+      }
+      .c7n-pro-btn:not(.c7n-pro-btn-flat).c7n-pro-btn-primary {
+        border: none !important;
+        background-color: #1c879c !important;
+      }
+    }
+    .c7n-pro-select-wrapper {
+      width: 25.4vw;
+      input {
+        height: 48px;
+        font-size: 20px;
+        line-height: 28px;
+        color: #999;
+      }
+    }
+    .c7n-pro-select-suffix {
+      .icon-search::before {
+        font-size: 24px !important;
+        top: 0 !important;
+      }
+    }
+    .c7n-pro-select-prefix {
+      > img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

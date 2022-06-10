@@ -1,0 +1,230 @@
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  .lmes-offline-split-tabs {
+    :global {
+      // tab标题相关样式
+      .c7n-tabs-bar {
+        font-size: 20px;
+        margin-bottom: 0;
+        display: inline-block;
+        .c7n-tabs-extra-content {
+          margin: 20px 0 0 20px;
+        }
+        .c7n-tabs-nav-container {
+          height: 80px;
+          .c7n-tabs-nav-wrap {
+            height: 80px;
+          }
+          .c7n-tabs-tab {
+            font-size: 24px;
+            padding: 20px;
+            color: #666;
+          }
+          .c7n-tabs-tab-active {
+            color: #1c879c;
+            border-top: 4px #1c879c solid;
+          }
+          .c7n-tabs-ink-bar {
+            width: 70px !important;
+            left: 20px;
+            background-color: #1c879c;
+          }
+        }
+      }
+    }
+    .tab-content {
+      background-color: #fff;
+      display: flex;
+      .mo-info {
+        width: 50%;
+        padding: 23px 26px;
+        overflow-y: scroll;
+        height: calc(100vh - 450px);
+        :global {
+          .c7n-pro-input-wrapper,
+          .c7n-pro-select-wrapper {
+            input {
+              height: 64px;
+              font-size: 30px;
+              line-height: 36px;
+              color: #979797;
+            }
+            .c7n-pro-select-suffix {
+              .icon-search::before {
+                font-size: 24px !important;
+                top: 0 !important;
+              }
+            }
+          }
+          .c7n-pro-input-suffix {
+            width: 48px;
+            height: 53px;
+            right: 10px;
+            img {
+              width: 48px;
+              height: 53px;
+            }
+          }
+          // NumberField相关样式
+          .c7n-pro-input-number-wrapper {
+            width: 11vw;
+            input {
+              height: 64px;
+              font-size: 30px;
+              line-height: 36px;
+              color: #979797;
+            }
+          }
+          .c7n-pro-input-wrapper {
+            margin-left: 20px;
+            width: 32.8vw;
+          }
+          .c7n-pro-select-wrapper {
+            width: 32.8vw;
+            input {
+              height: 48px;
+              font-size: 20px;
+              line-height: 28px;
+              color: #999;
+            }
+          }
+        }
+        .select-info {
+          display: flex;
+        }
+        .item-info {
+          margin-top: 27px;
+        }
+        > div:not(.progress-info) {
+          display: flex;
+          justify-content: space-between;
+          > div {
+            width: calc(100% - 141px);
+            font-weight: 600;
+            font-size: 32px;
+            color: #333;
+            p:first-child {
+              margin-bottom: 24px;
+            }
+          }
+          > div:last-child {
+            width: 141px;
+            height: 141px;
+            border: 1px solid #ddd;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .progress-info {
+          position: relative;
+          margin-top: 23%;
+          .remark {
+            // margin: 140px 0 16px;
+            font-size: 22px;
+            color: #333;
+          }
+          .progress-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 22px;
+            line-height: 22px;
+            font-size: 22px;
+            color: #333;
+            .progress {
+              width: 88%;
+              height: 13px;
+              border-radius: 2px;
+              background: #e8e8e8;
+              div {
+                border-radius: 2px;
+                background: #1c879c;
+                height: 13px;
+              }
+            }
+          }
+        }
+      }
+      .split-info {
+        width: 50%;
+        padding: 23px 26px;
+        height: calc(100vh - 425px);
+        :global {
+          .c7n-pro-input-wrapper,
+          .c7n-pro-select-wrapper {
+            input {
+              height: 64px;
+              font-size: 30px;
+              line-height: 36px;
+              color: #979797;
+            }
+            .c7n-pro-select-suffix {
+              .icon-search::before {
+                font-size: 24px !important;
+                top: 0 !important;
+              }
+            }
+          }
+          // NumberField相关样式
+          .c7n-pro-input-number-wrapper {
+            input {
+              font-size: 22px;
+              color: #1c879c;
+              font-weight: 500;
+              text-align: center;
+              padding: 0 10px;
+            }
+          }
+          .c7n-pro-input-wrapper {
+            margin-left: 20px;
+            width: 30vw;
+          }
+          .c7n-pro-select-wrapper {
+            width: 49%;
+            input {
+              height: 48px;
+              font-size: 20px;
+              line-height: 28px;
+              color: #999;
+            }
+          }
+        }
+        .select-area {
+          display: flex;
+          justify-content: space-between;
+        }
+        .split-area {
+          height: calc(100% - 100px);
+          overflow-y: scroll;
+          margin-top: 30px;
+          .split-line {
+            height: 56px;
+            background-color: #f4f4f4;
+            // border: 1px solid #ccc;
+            padding: 0 12px;
+            margin: 15px 15px 15px 0;
+            .title {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            :global {
+              .c7n-pro-input-number-inner-button {
+                display: none;
+              }
+            }
+            .upload {
+              cursor: pointer;
+              font-size: 20px;
+              color: #1c879c;
+            }
+          }
+        }
+      }
+    }
+  }
+}

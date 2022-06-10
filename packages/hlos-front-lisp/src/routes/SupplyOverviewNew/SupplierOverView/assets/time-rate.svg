@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="51px" viewBox="0 0 133 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>到货及时率</title>
+    <defs>
+        <linearGradient x1="62.0144286%" y1="130.206849%" x2="62.0144286%" y2="-11.9599443%" id="linearGradient-1">
+            <stop stop-color="#0097F5" stop-opacity="0.0187937063" offset="0%"></stop>
+            <stop stop-color="#0097F5" stop-opacity="0.342848558" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="供应总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="供应总览备份" transform="translate(-836.000000, -553.000000)">
+            <g id="编组-3备份" transform="translate(810.000000, 533.000000)">
+                <g id="到货及时率" transform="translate(27.000000, 21.000000)">
+                    <polyline id="Shape" stroke="#1890FF" points="0 41.4864865 9.23717949 9 18.6143162 16.8762782 28.1314103 13.1437825 37.3685897 6.48648649 46.8856838 13.1437825 56.2628205 6.48648649 65.5 24 73.8562002 13.1437825 81.1471446 6.48648649 93.2488612 9 102.512793 13.1437825 111.080537 9 121.762821 6.48648649 131 2.41438813e-14"></polyline>
+                    <polygon id="Shape" fill="url(#linearGradient-1)" points="0 50 0 41.4864865 9.23717949 9 18.6143162 16.8762782 28.1314103 13.1437825 37.3685897 6.48648649 46.8856838 13.1437825 56.2628205 6.48648649 65.5 24 73.8562002 13.1437825 81.1471446 6.48648649 93.2488612 9 102.512793 13.1437825 111.080537 9 121.762821 6.48648649 131 2.41438813e-14 131 50"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

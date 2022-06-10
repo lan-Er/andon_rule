@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="51px" viewBox="0 0 133 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <defs>
+        <linearGradient x1="62.0144286%" y1="-11.9599443%" x2="62.0144286%" y2="130.206849%" id="linearGradient-1">
+            <stop stop-color="#FAD961" stop-opacity="0.365439248" offset="0%"></stop>
+            <stop stop-color="#FAEC45" stop-opacity="0.124508304" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="供应总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="供应总览备份" transform="translate(-836.000000, -659.000000)">
+            <g id="编组-3备份-2" transform="translate(810.000000, 639.000000)">
+                <g id="编组-4" transform="translate(27.000000, 21.000000)">
+                    <polygon id="Shape" fill="url(#linearGradient-1)" points="0 50 0 9 9.23717949 12.5675676 18.6143162 24.5 28.1314103 27 37.3685897 16.6272116 46.8856838 29.3357321 56.2628205 11.8704549 65.5 11.8704549 74.8771368 9 84.1994411 16.6272116 93.6314103 9 103.008547 14.8648649 112.385684 12.5675676 121.762821 6.48648649 131 0 131 50"></polygon>
+                    <polyline id="Shape" stroke="#FBDF59" points="0 9 9.23717949 12.5675676 18.6143162 24.5 28.1314103 27 37.3685897 16.6272116 46.8856838 29.3357321 56.2628205 11.8704549 65.5 11.8704549 74.8771368 9 84.1994411 16.6272116 93.6314103 9 103.008547 14.8648649 112.385684 12.5675676 121.762821 6.48648649 131 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

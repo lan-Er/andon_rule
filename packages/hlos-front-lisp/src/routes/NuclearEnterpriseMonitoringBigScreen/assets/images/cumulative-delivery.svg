@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="52px" viewBox="0 0 310 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>框3</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-1007.000000, -126.000000)">
+            <g id="框3" transform="translate(1008.500000, 127.000000)">
+                <g id="编组" transform="translate(0.000000, 0.155520)">
+                    <polyline id="Stroke-1" stroke-opacity="0.252622378" stroke="#FFFFFF" stroke-width="0.705952" points="303.126539 19.599216 303.126539 12.03696 293.782971 2.6936 11.7280592 2.6936 2.3819952 12.03696 2.3819952 19.599216"></polyline>
+                    <g transform="translate(0.000000, 0.168480)" stroke="#50CEFF" stroke-width="0.705952">
+                        <polyline id="Stroke-2" points="0.0416208 10.8990752 10.7561168 0.1843712 296.28592 0.1843712 307 10.8990752"></polyline>
+                        <polyline id="Stroke-4" points="305.631175 37.188528 294.916887 47.903024 10.755992 47.903024 0.0416208 37.188528"></polyline>
+                    </g>
+                    <polyline id="Stroke-6" stroke-opacity="0.252622378" stroke="#FFFFFF" stroke-width="0.705952" points="2.3820368 28.824952 2.3820368 36.387416 11.7281008 45.730984 293.782971 45.730984 303.126539 36.387416 303.126539 28.824952"></polyline>
+                    <g transform="translate(0.832000, 19.304480)" stroke="#FFFFFF" stroke-width="1.411904">
+                        <line x1="2.9907904" y1="0.294736" x2="0.1118624" y2="0.294736" id="Stroke-7"></line>
+                        <line x1="301.031622" y1="0.294736" x2="303.91055" y2="0.294736" id="Stroke-9"></line>
+                        <line x1="301.031622" y1="9.520472" x2="303.91055" y2="9.520472" id="Stroke-11"></line>
+                        <line x1="2.9907904" y1="9.520472" x2="0.1118624" y2="9.520472" id="Stroke-13"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

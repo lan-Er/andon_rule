@@ -1,0 +1,152 @@
+/*
+ * @Description: 
+ * @Author: taotao.zhu@hand-china.com
+ * @Date: 2020-11-02 14:31:51
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-04-14 14:51:28
+ */
+
+.Pqc-statistical-report {
+  .header-search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-search-left {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .header-search-first,
+      .header-search-second {
+        margin: 0 16px;
+        :global {
+          .c7n-pro-radio-button {
+            margin-left: 0 !important;
+          }
+        }
+      }
+      .header-search-second {
+        width: 250px;
+      }
+    }
+
+    .header-search-right {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      :global {
+        .hzero-permission-btn {
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+  .search-title-content {
+    height: 30px;
+    width: 500px;
+    margin: 23px 0;
+    display: flex;
+    align-items: center;
+    .search-title {
+      font-size: 16px;
+      line-height: 22px;
+      color: #333;
+    }
+    .search-tip {
+      margin-left: 12px;
+      font-size: 11px;
+      line-height: 12px;
+      color: #999;
+    }
+    .search-select {
+      width: 100px;
+      margin-left: 12px;
+      font-size: 16px;
+      line-height: 22px;
+      color: #333;
+      :global {
+        .c7n-pro-select-clear-button {
+          display: none;
+        }
+        .c7n-pro-select {
+          height: 30px;
+        }
+      }
+    }
+  }
+  .top-search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .top-search-lineOne {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-column-gap: 5px;
+      :global {
+        .c7n-pro-select-wrapper {
+          width: 100%;
+        }
+      }
+    }
+    .top-search-lineTwo {
+      flex: 1;
+      // display: flex;
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 33% 66%;
+      grid-column-gap: 5px;
+      :global {
+        .c7n-pro-select-wrapper {
+          width: 100%;
+        }
+      }
+      .top-search-lineTwo-right {
+        flex: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .lineTwo-right-item-rate {
+          flex: 2;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          .statistical-rate {
+            flex: 1;
+            text-align: center;
+          }
+          .statistical-rate-mid {
+            margin: 0 8px;
+          }
+        }
+        .lineTwo-right-item-query {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+  .mid-chart {
+    width: 100%;
+    margin-top: 16px;
+    .expend-or-hide {
+      height: 22px;
+      width: 150px;
+      line-height: 22px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+    .chart-content {
+      min-height: 300px;
+      width: 100%;
+    }
+  }
+  .bottom-table {
+    margin-top: 20px;
+    min-height: 200px;
+  }
+}

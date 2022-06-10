@@ -1,0 +1,251 @@
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 23px 26px;
+  width: 49%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  .tabs-wrapper {
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-size: 20px;
+      line-height: 28px;
+      color: #333;
+    }
+    .tabs {
+      width: 100%;
+      display: flex;
+      color: #666;
+      > div {
+        padding: 10px 16px 10px 17px;
+        background: #fff;
+        border: 1px solid #999;
+        font-size: 20px;
+        line-height: 28px;
+        cursor: pointer;
+        &.active {
+          background: rgba(42, 126, 139, 0.2);
+          border: 1px solid #0c6b7e;
+          font-weight: 500;
+          color: #0c6b7e;
+        }
+      }
+      div + div {
+        border-left: none;
+      }
+      &.issue {
+        > div {
+          width: 120px;
+          text-align: center;
+        }
+      }
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  .list {
+    height: calc(100% - 50px);
+    .middle {
+      // flex: 1;
+      height: calc(100% - 50px);
+      overflow-y: auto;
+      .content-right-eye {
+        height: 56px;
+        background-color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        margin: 15px 0;
+        .title {
+          font-size: 22px;
+          font-weight: 500;
+          color: #333;
+        }
+        .range {
+          font-size: 20px;
+          color: #666;
+        }
+        .qualified-input {
+          :global {
+            input {
+              width: 100px;
+              height: 32px;
+              border: 1px solid #4caf50;
+              color: #4caf50 !important;
+            }
+          }
+        }
+        .unqualified-input {
+          :global {
+            input {
+              width: 100px;
+              height: 32px;
+              border: 1px solid #f4511e;
+              color: #f4511e !important;
+            }
+          }
+        }
+        :global {
+          .c7n-pro-input-number-wrapper {
+            height: 32px;
+            margin-right: 10px;
+            input {
+              font-size: 22px;
+              color: #1c879c;
+              height: 100%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .abnormal-line {
+        height: 56px;
+        background-color: #f4f4f4;
+        // border: 1px solid #ccc;
+        padding: 0 12px;
+        margin: 15px 0;
+        .title {
+          font-size: 22px;
+          font-weight: 500;
+        }
+        :global {
+          input {
+            font-size: 22px;
+            color: #1c879c;
+            font-weight: 500;
+            text-align: center;
+            padding: 0 10px;
+          }
+          .c7n-pro-input-number-inner-button {
+            display: none;
+          }
+        }
+        .upload {
+          cursor: pointer;
+          font-size: 20px;
+          color: #1c879c;
+        }
+      }
+    }
+    .footer {
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 20px;
+      font-weight: 500;
+      .total {
+        span {
+          color: #1c879c;
+        }
+      }
+      .to-page {
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .page {
+          display: flex;
+          align-items: center;
+          :global {
+            .c7n-pro-input-number-wrapper {
+              width: 40px;
+              text-align: center;
+              input {
+                text-align: center;
+                padding: 0;
+              }
+              .c7n-pro-input-number-inner-button {
+                display: none;
+              }
+            }
+          }
+          > span {
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  // 设置输入框的placeholder样式
+  ::-webkit-input-placeholder {
+    /* Webkit browsers */
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  :-moz-placeholder {
+    /* Mozilla Firefox 4 to 8 */
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  :-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+}
+.po-precheck-pictures-modal {
+  // width: 40%;
+  :global {
+    .c7n-pro-modal-header {
+      background-color: #ebebeb;
+      .c7n-pro-modal-title {
+        font-size: 22px;
+        color: #666;
+      }
+      .c7n-pro-modal-header-buttons {
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .img-list {
+      :global {
+        .c7n-upload-list-item {
+          padding: 0;
+          .c7n-upload-list-item-info {
+            span {
+              height: 100%;
+            }
+            .c7n-upload-list-item-thumbnail {
+              object-fit: contain;
+              img {
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-button {
+      text-align: right;
+      margin-top: 20px;
+      span {
+        display: inline-block;
+        width: 123px;
+        height: 48px;
+        background-color: #1c879c;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        line-height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+}

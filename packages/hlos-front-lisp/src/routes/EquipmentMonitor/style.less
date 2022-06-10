@@ -1,0 +1,266 @@
+:global {
+  .isp-equipment-monitor-content {
+    padding: 0;
+    margin: 8px;
+    .c7n-progress-circle-path {
+      stroke: #2ac5a9 !important;
+    }
+    .c7n-tabs-nav {
+      padding: 3px;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #344563;
+      line-height: 24px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    .common {
+      background: #feffff;
+      border: 1px solid #e7e7e7;
+      border-radius: 6px;
+    }
+    .title {
+      padding: 11px 17px;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #344563;
+      line-height: 24px;
+      border-bottom: 1px solid #e7e7e7;
+    }
+    .monitor-board {
+      overflow: hidden;
+      .board-item {
+        float: left;
+        width: calc(33.3% - 5.5px);
+        height: 332px;
+        background: #feffff;
+        border: 1px solid #e7e7e7;
+        border-radius: 6px;
+
+        .status-chart-warp {
+          display: flex;
+          #status-chart {
+            margin: 35px 37px 0 37px;
+          }
+          .pie-legend {
+            margin-top: 102px;
+            flex: 0 0 calc(100% - 300px);
+            > div {
+              width: 91px;
+              display: flex;
+              justify-content: space-between;
+              line-height: 12px;
+              .pie-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #ff4b4b;
+              }
+              .pie-status {
+                font-size: 12px;
+                color: #868fa4;
+              }
+              .pie-number {
+                font-size: 18px;
+                color: #595959;
+              }
+            }
+            > div:first-child {
+              .pie-dot {
+                background-color: #2ac5a9;
+              }
+            }
+            > div:last-child {
+              .pie-dot {
+                background-color: #fba35c;
+              }
+            }
+          }
+        }
+
+        .inspection-progress {
+          padding: 43px 37px;
+          display: flex;
+          .progress-legend {
+            flex: 1;
+            margin-left: 37px;
+            margin-top: 75px;
+            > div {
+              width: 91px;
+              display: flex;
+              justify-content: space-between;
+              line-height: 12px;
+              .progress-dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #f3f5f8;
+              }
+              .progress-status {
+                font-size: 12px;
+                color: #868fa4;
+              }
+              .progress-number {
+                font-size: 18px;
+                color: #595959;
+              }
+            }
+            > div:first-child {
+              .progress-dot {
+                background-color: #2ac5a9;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .equipment-andon-status {
+      display: flex;
+      margin: 8px 0;
+      .equipment-andon {
+        width: 45.4%;
+        height: 280px;
+        .andons {
+          padding: 0 16px;
+          .andon-item {
+            width: calc(50% - 8px);
+            float: left;
+            display: flex;
+            padding: 8px;
+            margin-bottom: 16px;
+            background: #fafafa;
+            border-radius: 2px;
+            .icon {
+              flex: 0 0 48px;
+              img {
+                width: 40px;
+                height: 40px;
+              }
+            }
+            .andon-info {
+              margin-left: 20px;
+              > div {
+                display: flex;
+                justify-content: space-between;
+                > p {
+                  margin-bottom: 0;
+                  span {
+                    display: inline-block;
+                    padding: 0 7px;
+                    background: #ff6b6b;
+                    border-radius: 7.5px;
+                    font-size: 12px;
+                    color: #feffff;
+                    line-height: 12px;
+                  }
+                }
+              }
+              .name-location {
+                margin-bottom: 12px;
+                font-size: 14px;
+                color: #333;
+                line-height: 12px;
+                .location {
+                  font-size: 12px;
+                }
+              }
+              .datetime {
+                font-size: 12px;
+                color: #aaadba;
+                line-height: 12px;
+              }
+            }
+            .resp {
+              span {
+                background: #fba35c;
+              }
+            }
+          }
+          .andon-item:nth-child(2n) {
+            margin-left: 16px;
+          }
+        }
+      }
+      .equipment-status {
+        width: calc(54.5% - 9px);
+        height: 280px;
+        margin-left: 9px;
+      }
+    }
+    .equipment-map {
+      .map-lines {
+        padding: 19px 13px 19px 22px;
+        .line-item {
+          padding-left: 17px;
+          padding-bottom: 17px;
+          border-left: 1px dotted #d8d8d8;
+          position: relative;
+          .dot {
+            width: 6px;
+            height: 6px;
+            background-color: #d8d8d8;
+            border-radius: 50%;
+            position: absolute;
+            top: 9px;
+            left: -3px;
+          }
+          .line-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #333;
+          }
+          .items {
+            overflow: hidden;
+            .item {
+              width: calc(25% - 16px);
+              float: left;
+              margin-right: 16px;
+              margin-bottom: 10px;
+              padding: 14px 12px 12px 11px;
+              background: #fafafa;
+              border-radius: 2px;
+              border-left: 4px solid #2ac5a9;
+              > div {
+                display: flex;
+                justify-content: space-between;
+                p {
+                  margin-bottom: 0;
+                }
+              }
+              .item-top {
+                margin-bottom: 15px;
+                font-size: 14px;
+                color: #333;
+                line-height: 12px;
+                .status {
+                  font-size: 12px;
+                  color: #2ac5a9;
+                }
+              }
+              .item-bottom {
+                font-size: 12px;
+                color: #aaadba;
+                line-height: 12px;
+              }
+            }
+            .BREAKDOWN {
+              border-left: 4px solid #ff6b6b;
+              .status {
+                color: #ff6b6b !important;
+              }
+            }
+            .MAINTENANCE {
+              border-left: 4px solid #fba35c;
+              .status {
+                color: #fba35c !important;
+              }
+            }
+          }
+        }
+        .line-item:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

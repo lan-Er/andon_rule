@@ -1,0 +1,67 @@
+.dashboard-header {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  @font-face {
+    font-family: PangMenZhengDao;
+    src: url('hlos-front/lib/assets/PangMenZhengDao.ttf');
+  }
+  font-family: PangMenZhengDao, serif;
+  color: #fff;
+  @media screen and (min-width: 800px) {
+    font-size: 2.8vw;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 2.6vw;
+  }
+  @media screen and (min-width: 1360px) {
+    font-size: 2.2vw;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 2vw;
+  }
+  span {
+    position: absolute;
+    height: 39px;
+    left: 50%;
+    top: 0;
+    line-height: 42px;
+    transform: translateX(-50%);
+    letter-spacing: 0.115em;
+    cursor: pointer;
+  }
+  .sub-input {
+    position: absolute;
+    height: 0.3rem;
+    width: 15%;
+    left: 85%;
+    top: 50px;
+    line-height: 2px;
+    transform: translateX(-50%);
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    background: #182534;
+    border: 1px solid white;
+    input {
+      font-size: 0.1rem;
+    }
+    label {
+      height: 30px;
+      input {
+        font-size: 0.125rem;
+        color: white;
+      }
+      i {
+        margin-bottom: 38px;
+      }
+    }
+  }
+  img {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="4px" viewBox="0 0 6 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="供应总览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="异常订单_核企侧_变更订单" transform="translate(-717.000000, -510.000000)" fill="#FF6B6B" fill-rule="nonzero">
+            <g id="编组-4备份-3" transform="translate(209.000000, 475.000000)">
+                <g id="编组-5" transform="translate(0.000000, 0.000000)">
+                    <path d="M508.067083,35.4358869 L510.548807,38.4470773 C510.652853,38.5634369 510.835088,38.5634369 510.939135,38.4470773 L513.433171,35.4358869 C513.583392,35.2671962 513.463954,35 513.238007,35 L508.262863,35 C508.0363,35 507.916247,35.2671962 508.067083,35.4358869 Z" id="Shape" transform="translate(510.750000, 36.767173) rotate(-360.000000) translate(-510.750000, -36.767173) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

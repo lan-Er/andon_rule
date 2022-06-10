@@ -1,0 +1,111 @@
+@media print {
+  body {
+    .purchase-return-order {
+      // 此处一定要加模块名，避免全局样式污染
+      page-break-before: always;
+      padding: 0 1.5cm;
+      color: #000;
+      margin: 0;
+      box-sizing: border-box;
+      > header {
+        page-break-before: always;
+      }
+      header {
+        page-break-before: always;
+      }
+      table {
+        color: #000;
+      }
+    }
+  }
+}
+.purchase-return-order {
+  font-family: 'SimHei', sans-serif !important;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding: 60px;
+  color: #000;
+  size: A4 landscape;
+  height: 18cm;
+  display: flex;
+  flex-direction: column;
+  header {
+    height: 33px;
+    display: flex;
+    align-items: flex-end;
+    > div {
+      width: 300px;
+      font-size: 22px;
+      margin-bottom: 0;
+      p {
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+      .print-title {
+        text-align: center;
+        font-size: 24px;
+        + p {
+          text-align: center;
+        }
+      }
+    }
+    .purchase-return-order-title {
+      font-size: 24px;
+      font-weight: 600;
+      flex: 1;
+      text-align: center;
+    }
+    div:last-child {
+      text-align: right;
+      font-size: 22px;
+    }
+  }
+
+  .transfer-card-print-content {
+    margin-top: 30px;
+    flex: 1;
+    .transfer-card-print-content-list {
+      width: 100%;
+      text-align: center;
+      border: 1px solid #000;
+      font-size: 12px;
+      margin: 10px 0;
+      max-height: 13cm;
+      transform-origin: 0 center;
+      tr {
+        height: 44px;
+        page-break-inside: avoid;
+        td {
+          min-width: 60px;
+          overflow: auto;
+        }
+        td:nth-child(1),
+        td:nth-child(2),
+        td:nth-child(4),
+        td:nth-child(5) {
+          white-space: nowrap;
+          padding: 6px;
+        }
+        td:nth-child(3) {
+          width: 200px;
+          text-align: center;
+        }
+        td:nth-child(7) {
+          width: 120px;
+          text-align: center;
+        }
+        td:nth-child(8) {
+          width: 120px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  footer {
+    word-wrap: break-word;
+    height: 33px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+  }
+}

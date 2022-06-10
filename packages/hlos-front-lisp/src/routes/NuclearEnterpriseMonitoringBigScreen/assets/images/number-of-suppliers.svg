@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="52px" viewBox="0 0 50 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>供应商数</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="98.3282343%" id="linearGradient-1">
+            <stop stop-color="#3CADD9" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3CADD9" stop-opacity="0.338833042" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-1137.000000, -185.000000)">
+            <g id="编组-26" transform="translate(1133.000000, 186.000000)">
+                <g id="供应商数" transform="translate(4.000000, 0.000000)">
+                    <polygon id="多边形备份" stroke-opacity="0.278791521" stroke="#FFFFFF" fill="url(#linearGradient-1)" points="25 0 46.6506351 12.5 46.6506351 37.5 25 50 3.34936491 37.5 3.34936491 12.5"></polygon>
+                    <g id="编组" transform="translate(13.000000, 13.000000)" fill="#50CEFF" fill-rule="nonzero">
+                        <path d="M7.73498362e-06,5.30883527 L11.9438934,0 L23.8877791,5.30883527 L11.9438934,10.6176705 L7.73498362e-06,5.30883527 Z M10.6190032,23.8572989 L0.0198810746,18.5577378 L7.73498362e-06,7.95861579 L10.6190032,13.2581768 L10.6190032,23.8572989 Z M23.8679057,18.5577378 L13.2687837,23.8572989 L13.2687837,13.2581768 L23.8877791,7.95861579 L23.8679057,18.5577378 Z" id="形状"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+.my-progress {
+  padding: 0;
+  margin: 0;
+  line-height: 10px;
+  .my-progress-content {
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
+    > div {
+      display: table-cell;
+    }
+    .my-progress-content-left {
+      height: 10px !important;
+      border-radius: 5px;
+      line-height: 10px;
+      position: relative;
+      > div:nth-child(1) {
+        background-color: #2ac5a9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        height: 10px !important;
+        z-index: 2;
+      }
+      .my-progress-bottom {
+        position: absolute;
+        height: 10px !important;
+        background-color: #efefef;
+        width: 100% !important;
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+      }
+    }
+    .my-progress-content-right {
+      width: 30px;
+      margin-left: 6px !important;
+    }
+  }
+}

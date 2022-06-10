@@ -1,0 +1,240 @@
+:global {
+  .isp-die-resume-detail-modal {
+    .c7n-modal-content {
+      padding: 0;
+      .c7n-modal-title {
+        padding: 16px 24px;
+        font-size: 16px;
+        color: #4a4a4a;
+        line-height: 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+      }
+      .footer {
+        overflow: hidden;
+        padding: 12px 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.09);
+        button {
+          float: right;
+          width: 72px;
+          height: 28px;
+          margin-right: 22px;
+        }
+      }
+      .detail {
+        padding: 24px 32px 6px;
+        font-size: 12px;
+        color: #333;
+        letter-spacing: 0.3px;
+        line-height: 16px;
+        .c7n-col-12 {
+          margin-bottom: 14.5px;
+        }
+      }
+    }
+  }
+  .isp-die-resume-filter-modal {
+    .c7n-modal-content {
+      padding: 0;
+      .c7n-modal-title {
+        padding: 16px 24px;
+        font-size: 16px;
+        color: #4a4a4a;
+        line-height: 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+      }
+      .c7n-modal-body {
+        padding: 0 32px;
+      }
+      .c7n-modal-footer {
+        padding-right: 24px;
+        .c7n-btn-flat {
+          width: 72px;
+          height: 28px;
+          margin-right: 8px;
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+        }
+        .c7n-btn-primary {
+          background: #47cac2;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .isp-die-resume-modal {
+    .c7n-modal-content {
+      padding: 0;
+      .c7n-modal-title {
+        padding: 16px 20px;
+        font-size: 16px;
+        color: #4a4a4a;
+        line-height: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+      }
+      .c7n-modal-body {
+        padding: 35px 32px;
+      }
+      .c7n-modal-footer {
+        padding-right: 24px;
+        .c7n-btn-flat {
+          width: 72px;
+          height: 28px;
+          margin-right: 8px;
+          border: 1px solid #d9d9d9;
+          border-radius: 2px;
+        }
+        .c7n-btn-primary {
+          background: #47cac2;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .isp-die-resume {
+    margin: 8px;
+    padding: 0;
+    background-color: #f6f6f6;
+    .die-header {
+      display: flex;
+      padding: 16px 16px 5px;
+      background-color: #fff;
+      .left-picture {
+        height: 90px;
+        flex: 0 0 150px;
+        img {
+          width: 160px;
+          height: 90px;
+        }
+      }
+      .right {
+        flex: 1;
+        margin-left: 32px;
+        .title {
+          padding-top: 5px;
+          font-size: 20px;
+          color: #333;
+          line-height: 12px;
+          span {
+            margin-left: 9px;
+          }
+          .status {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 3px;
+            font-size: 13px;
+            color: #fff;
+            background: #47cac2;
+            border-radius: 2px;
+          }
+        }
+        .info {
+          padding-left: 9px;
+          .info-item {
+            font-size: 12px;
+            color: #333;
+            line-height: 12px;
+            margin-bottom: 15px;
+            img {
+              width: 14px;
+              height: 14px;
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+    .die-resume {
+      margin-top: 8px;
+      padding: 16px;
+      background: #fff;
+      position: relative;
+      .resume-filter-btn {
+        position: absolute;
+        right: 0;
+        button {
+          border: none;
+          color: #2abecf !important;
+        }
+      }
+      .resume-items {
+        margin-top: 18px;
+      }
+      .resume-item {
+        display: flex;
+        line-height: 32px;
+        .resume-item-left {
+          flex: 0 0 160px;
+          .circle-text {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+            border-radius: 50%;
+            background: #2abecf;
+            text-align: center;
+            color: #fff;
+            font-size: 19px;
+            &.orange {
+              background: #ff9f00;
+            }
+            &.blue {
+              background: #0088fe;
+            }
+            &.green {
+              background: #18bc84;
+            }
+            &.red {
+              background: #e26c28;
+            }
+          }
+
+          .date {
+            font-size: 12px;
+            color: #333;
+            line-height: 32px;
+          }
+        }
+        .resume-item-right {
+          flex: 1;
+          position: relative;
+          padding: 0 0 42px 30px;
+          line-height: 32px;
+          border-left: 1px dotted#D8D8D8;
+          .block-icon {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            transform: rotateZ(45deg) scale(0.7);
+            background: #d8d8d8;
+            border-radius: 1px;
+            left: -5.5px;
+            top: 11px;
+          }
+          > img {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+
+            border-radius: 2px;
+            left: -11px;
+            top: 6px;
+          }
+          .register {
+            transform: rotateZ(45deg) scale(0.7);
+            background: #d8d8d8;
+          }
+          .detail {
+            font-size: 12px;
+            color: #47cac2;
+            line-height: 12px;
+            cursor: pointer;
+            margin-left: 5px;
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

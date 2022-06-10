@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="43px" height="43px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 10</title>
+    <defs>
+        <rect id="path-1" x="-1.27897692e-13" y="-1.42108547e-14" width="41.28" height="41.28"></rect>
+        <rect id="path-3" x="1.92" y="1.92" width="37.44" height="37.44"></rect>
+        <filter x="-6.7%" y="-6.7%" width="113.4%" height="113.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="2.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.176470588   0 0 0 0 0.807843137   0 0 0 0 0.952941176  0 0 0 0.637838724 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="52.8850989%" y1="0%" x2="52.8850989%" y2="111.834937%" id="linearGradient-5">
+            <stop stop-color="#FFFFFF" stop-opacity="0.465936407" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="大数据看板" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="看板" transform="translate(-628.000000, -262.000000)">
+            <g id="编组-10" transform="translate(629.000000, 263.000000)">
+                <g id="编组-13">
+                    <g id="形状结合">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" stroke-opacity="0.36756993" stroke="#2DCEF3" stroke-width="0.5" xlink:href="#path-1"></use>
+                        <path d="M0.96,40.32 L0.96,42.24 L-0.96,42.24 L-0.96,40.32 L0.96,40.32 Z M42.24,40.32 L42.24,42.24 L40.32,42.24 L40.32,40.32 L42.24,40.32 Z M0.96,-0.96 L0.96,0.96 L-0.96,0.96 L-0.96,-0.96 L0.96,-0.96 Z M42.24,-0.96 L42.24,0.96 L40.32,0.96 L40.32,-0.96 L42.24,-0.96 Z" fill="#2DCEF3" mask="url(#mask-2)"></path>
+                    </g>
+                    <g id="矩形" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                    <polygon id="三角形" fill="#2DCEF3" transform="translate(5.280000, 5.280000) rotate(-270.000000) translate(-5.280000, -5.280000) " points="1.92 1.92 8.64 8.64 1.92 8.64"></polygon>
+                </g>
+                <g id="编组" transform="translate(8.000000, 8.000000)" fill="url(#linearGradient-5)" fill-rule="nonzero">
+                    <path d="M22.6074855,15.2941544 L24.9515594,13.9532438 L24.9373177,10.8604947 L22.5762633,9.54302808 L21.6425556,7.29492126 L22.3498203,4.68978602 L20.1473964,2.52680076 L17.5470815,3.26802635 L15.3182557,2.34691715 L13.9636512,0.00163813976 L10.8681633,0.0145652067 L9.55036804,2.37309998 L7.30083703,3.30483568 L4.69329168,2.59713282 L2.52921088,4.79692741 L3.26178191,7.40513009 L2.34078226,9.63143615 L0.00459603839,10.9743187 L0.0188377215,14.0671773 L2.37989215,15.3846439 L3.31349023,17.6327508 L2.60633516,20.237886 L4.80525335,22.4162085 L7.41531838,21.6854998 L9.64403457,22.6064995 L10.9871362,24.9491493 L14.0826241,24.9362222 L15.4003098,22.5776874 L17.6499504,21.6458422 L20.2574957,22.353545 L22.4369137,20.1574752 L21.7043427,17.5492725 L22.6074855,15.294264 L22.6074855,15.2941544 Z M11.1504776,18.2143598 C7.97151147,17.4803646 5.98884801,14.3109295 6.72207635,11.1349213 C7.4553047,7.95902259 10.6267118,5.97942657 13.8056779,6.71320268 C16.984644,7.44719788 18.9673074,10.6167426 18.2340791,13.7926412 C17.5008507,16.9685399 14.3294437,18.9482455 11.1504776,18.2143598 Z" id="形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

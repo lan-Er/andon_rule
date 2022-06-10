@@ -1,0 +1,289 @@
+@color: #62c0bc;
+@bgColorOptionOne: #4f7de7;
+@bgColorOptionTwo: #62c0bc;
+
+.lwms-issue-request-execute {
+  overflow: hidden;
+  .c7n-pro-btn-primary {
+    width: 72px;
+  }
+  p {
+    margin: 0;
+  }
+  .lwms-issue-request-execute-card-foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 15px;
+    background: #fafafa;
+    font-size: 12px;
+    color: #333;
+    line-height: 12px;
+    .circle {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 5.7px;
+      > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    .right {
+      line-height: 24px;
+      font-size: 12px;
+      color: #62c0bc;
+    }
+  }
+  .lwms-issue-request-execute-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 16px;
+    background-color: #fff;
+    .lwms-issue-request-execute-header-left {
+      .c7n-pro-btn {
+        width: 57px;
+        height: 32px !important;
+        padding: 0 !important;
+        margin: 0;
+        border-radius: none;
+        span {
+          width: 42px;
+          font-size: 14px;
+          color: #7d8da1;
+          line-height: 22px;
+        }
+        &.active {
+          border: 1px solid #62c0bc;
+          span {
+            color: #62c0bc;
+          }
+        }
+      }
+      .c7n-pro-btn:first-child {
+        border-radius: 4px 0 0 4px !important;
+        border-right: none;
+      }
+      .c7n-pro-btn:last-child {
+        border-radius: 0 4px 4px 0 !important;
+        border-left: none;
+      }
+    }
+    .lwms-issue-request-execute-header-right {
+      .c7n-pro-select-wrapper {
+        margin-right: 16px;
+      }
+    }
+    .c7n-pro-calendar-picker-wrapper {
+      margin-right: 16px;
+    }
+  }
+  .sub-lwms-issue-request-execute-header {
+    padding-left: 8px;
+    font-size: 12px;
+    color: #999;
+    line-height: 42px;
+  }
+  .page-content-wrap {
+    margin: 0;
+    overflow: hidden;
+  }
+  .page-content {
+    margin: 0 8px;
+    .c7n-checkbox-inner {
+      border: 1px solid #d9d9d9;
+    }
+    .query {
+      .c7n-pro-input-wrapper {
+        width: 230px;
+        margin-right: 16px;
+      }
+      &.check {
+        display: flex;
+        justify-content: space-between;
+        .query-check {
+          display: flex;
+          align-items: center;
+          > div {
+            margin-left: 25px;
+            font-size: 12px;
+            color: #62c0bc;
+            line-height: 22px;
+            img {
+              margin-right: 4px;
+              cursor: pointer;
+            }
+            span {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .c7n-spin-nested-loading {
+      height: calc(100vh - 265px);
+    }
+    .lwms-issue-request-execute-card-list {
+      width: 100%;
+      height: calc(100vh - 285px);
+      max-height: 570px;
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-row-gap: 16px;
+      grid-column-gap: 16px;
+      background-color: #fff;
+      overflow-y: scroll;
+
+      .lwms-issue-request-execute-card {
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        .lwms-issue-request-execute-card-head {
+          display: flex;
+          justify-content: space-between;
+          height: 30px;
+          padding: 18px 15.8px 0 18.3px;
+          > p {
+            height: 12px;
+            font-size: 16px;
+            color: #333;
+            line-height: 12px;
+          }
+          .c7n-pro-btn {
+            width: 35.5px;
+            height: 20px;
+            margin-top: -4px;
+            padding: 0;
+            background: #62c0bc;
+            border-radius: 2px;
+            border: none !important;
+            span {
+              font-size: 12px;
+              color: #feffff;
+              line-height: 12px;
+            }
+          }
+        }
+        .lwms-issue-request-execute-card-content {
+          padding-left: 20px;
+          font-size: 12px;
+          color: #666;
+          line-height: 12px;
+          margin-bottom: 14px;
+          > p {
+            margin-top: 16px;
+          }
+          > p:nth-child(2) {
+            margin-top: 18px;
+          }
+          img {
+            width: 14px;
+            height: 14px;
+            margin-right: 9px;
+          }
+        }
+        .lwms-issue-request-execute-card-foot {
+          display: flex;
+          justify-content: space-between;
+          padding: 8px 15px;
+          background: #fafafa;
+          font-size: 12px;
+          color: #333;
+          line-height: 12px;
+          .circle {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: #fff;
+            line-height: 24px;
+            text-align: center;
+            margin-right: 5.7px;
+          }
+          .right {
+            line-height: 24px;
+            font-size: 12px;
+            color: #62c0bc;
+          }
+        }
+      }
+      &.check {
+        .lwms-issue-request-execute-card-wrapper {
+          border: 1px solid #ddd;
+          border-radius: 2px;
+          .lwms-issue-request-execute-card-select {
+            display: flex;
+          }
+          .lwms-issue-request-execute-card-foot {
+            padding: 8px 15px 8px 44px;
+          }
+          .c7n-checkbox-wrapper {
+            margin: 16px 0 0 15.8px;
+          }
+          .lwms-issue-request-execute-card {
+            width: 100%;
+            border: none;
+          }
+        }
+      }
+    }
+    .lwms-issue-request-execute-pagination {
+      margin-top: 16px;
+      text-align: center;
+      color: #62c0bc;
+      cursor: pointer;
+    }
+  }
+
+  .query-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .content-header {
+    width: 100%;
+    // position: absolute;
+    top: 10px;
+    margin-bottom: 10px;
+    padding: 0 12px;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 5px;
+    height: 30px;
+    margin-top: 15px;
+    padding: 0 12px;
+  }
+  .my-loading-yes-no {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+  }
+
+  .pass-button {
+    color: #fff !important;
+    background-color: @bgColorOptionTwo !important;
+    &:hover  {
+      span,
+      i {
+        color: #fff !important;
+      }
+      button {
+        border: none !important;
+      }
+    }
+  }
+}

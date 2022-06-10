@@ -1,0 +1,47 @@
+@table-tool-height: 29px;
+//.desinger-panel {
+//    :global {
+//        .ant-card-body {
+//            min-height: calc(100vh - @layout-header-height - 2 * 12px - 48px);
+//        }
+//    }
+//}
+
+.table-tool-query-input + .table-tool-query-input {
+  margin-right: 8px;
+}
+
+.table-tool-bar {
+  clear: both;
+}
+
+.table-tool-action {
+  height: @table-tool-height;
+  display: inline-block;
+  padding-top: 5px;
+  margin: 5px 0 10px;
+
+  button + button {
+    margin-left: 12px;
+  }
+}
+
+.table-tool-query {
+  height: @table-tool-height;
+  display: inline-block;
+  overflow: hidden;
+  margin: 5px 0 10px;
+}
+
+.table-tool-query-inner {
+  transition: all 800ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  float: right;
+  clear: both;
+  padding-right: 2px;
+}
+
+:global {
+  .item-limit {
+    background-color: red;
+  }
+}

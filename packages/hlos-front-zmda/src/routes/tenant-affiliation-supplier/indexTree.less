@@ -1,0 +1,58 @@
+.zmda-tenant-affiliation-content {
+  :global {
+    .c7n-table-thead {
+      tr {
+        height: 40px !important;
+      }
+    }
+    .c7n-table-tbody {
+      td {
+        height: 40px !important;
+      }
+    }
+    .c7n-table-row-expand-icon {
+      cursor: pointer;
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      text-align: center;
+      line-height: 14px;
+      border: 1px solid #e8e8e8;
+      user-select: none;
+      background: #fff;
+      font-size: 12px;
+      color: #333;
+    }
+    .c7n-table-row-expand-icon:before {
+      content: '+';
+    }
+    .c7n-table-row-expanded:before {
+      content: '-';
+    }
+  }
+}
+.zmda-role-assign-modal {
+  width: 8.5rem;
+  .modal-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    .modal-buttons-add {
+      margin-left: 8px;
+    }
+  }
+  .modal-table {
+    margin-top: 10px;
+  }
+  :global {
+    .c7n-pro-modal {
+      width: 8.5rem;
+    }
+  }
+}
+.tenant-affiliation-sidebar {
+  :global {
+    .c7n-switch {
+      width: 45px;
+    }
+  }
+}

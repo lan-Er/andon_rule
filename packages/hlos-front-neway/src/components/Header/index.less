@@ -1,0 +1,68 @@
+.dispatch-order-report-header {
+  background-color: #001f2e;
+  padding: 5px 10px;
+  display: flex;
+  border: 1px solid #425057;
+  position: relative;
+  margin: 10px 0 16px 0;
+
+  .avator {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #3f8795;
+  }
+
+  .form-area {
+    width: 65%;
+
+    :global {
+      .c7n-pro-field {
+        border-radius: 6px;
+      }
+
+      .c7n-pro-select,
+      .c7n-pro-input {
+        height: 48px;
+        font-size: 20px;
+        // border: 1px solid #c1c1c1;
+      }
+
+      .c7n-pro-field-wrapper {
+        margin-left: 20px;
+      }
+
+      .c7n-pro-form > table {
+        table-layout: auto;
+      }
+
+      input {
+        border: none !important;
+        color: #001f2e;
+        padding: 16px 10px;
+      }
+
+      input::-webkit-input-placeholder {
+        color: #001f2e;
+      }
+    }
+  }
+
+  .info-box {
+    color: #eceef0;
+    position: absolute;
+    right: 20px;
+    padding: 16px 0;
+
+    span {
+      &:first-child {
+        margin-right: 10px;
+        font-size: 14px;
+      }
+
+      &:last-child {
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+:global {
+  .page-container {
+    .page-content {
+      // background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMDBweCI+CiAgICAgICAgICAgICAgICA8dGV4dCB4PSIyMHB4IiB5PSI3MHB4IiBkeT0iMTNweCIKICAgICAgICAgICAgICAgICAgICB0ZXh0LWFuY2hvcj0ic3RhcnQiCiAgICAgICAgICAgICAgICAgICAgc3Ryb2tlPSIjZmYwMDAwIgogICAgICAgICAgICAgICAgICAgIHN0cm9rZS1vcGFjaXR5PSIwLjEiCiAgICAgICAgICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgICAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgtMTUsMjAgNzApIgogICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0PSIxMDAiCiAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplPSIxMyIKICAgICAgICAgICAgICAgICAgICBmb250LWZhbWlseT0ibWljcm9zb2Z0IHlhaGUiCiAgICAgICAgICAgICAgICAgICAgPgogICAgICAgICAgICAgICAgICAgIDEzOTg3NjU0MzIxCiAgICAgICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDwvc3ZnPg==');
+      background: #fff;
+    }
+  }
+}
+
+// HLOS CUSTOM
+:global {
+  .c7n-pro-table-wrapper .c7n-pro-table .c7n-pro-table-thead > tr > th:not(:first-child) {
+    padding: 0 !important;
+  }
+  .c7n-pro-table-row-height-fixed td {
+    padding: 0.01rem !important;
+  }
+  .c7n-pro-table-cell-inner {
+    border-radius: 0 !important;
+  }
+  .c7n-pro-table-content {
+    .c7n-pro-input {
+      // input
+      border-radius: 0 !important;
+      &:focus {
+        box-shadow: 0 0 0 0 !important;
+      }
+    }
+    .c7n-pro-select {
+      // lov
+      border-radius: 0 !important;
+    }
+    .c7n-pro-input-number,
+    .c7n-pro-calendar-picker {
+      // number
+      border-radius: 0 !important;
+    }
+  }
+  // logo 大小调整 鉴于 layout 采用类名不同需要同时覆盖
+  .hzero-normal-header-logo-icon-img,
+  .hzero-common-layout-header-logo-icon-img {
+    width: 32px;
+    height: 32px;
+  }
+  .c7n-pro-table-cell-editable {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .c7n-pro-select-disabled .c7n-pro-select,
+  .c7n-pro-select-disabled label:hover .c7n-pro-select,
+  .c7n-pro-select:disabled {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+  .c7n-pro-input-disabled .c7n-pro-input,
+  .c7n-pro-input-disabled label:hover .c7n-pro-input,
+  .c7n-pro-input:disabled {
+    color: rgba(0, 0, 0, 0.7) !important;
+  }
+  .c7n-pro-modal {
+    top: 0 !important;
+  }
+}

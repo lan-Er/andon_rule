@@ -1,0 +1,119 @@
+.supplier-in-detail-box {
+  height: 100%;
+  .page-head {
+    padding: 0 16px;
+    .c7n-row {
+      width: 100%;
+    }
+  }
+  .page-content-wrap {
+    background-color: #f4f5f7;
+    .c7n-tabs {
+      padding-bottom: 100px;
+    }
+  }
+  .head-sort-btn {
+    img {
+      display: inline-block;
+      height: 10px;
+      margin-left: 4px;
+    }
+  }
+  .head-choose-btn {
+    background: #4f7de7 !important;
+    color: #fff !important;
+    border: none !important;
+    &:hover {
+      span {
+        color: #fff !important;
+      }
+    }
+    img {
+      display: inline-block;
+      margin: -1px 2px 0 2px;
+    }
+  }
+  .c7n-tabs-tab-active {
+    &::after {
+      background-color: #62c0bc !important;
+    }
+    color: #62c0bc !important;
+  }
+  .detail-content {
+    margin: 0;
+    .detail-col {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 14px;
+      .detail-row {
+        width: 24%;
+        background-color: #fafafa;
+        border-radius: 2px;
+        padding: 12px 8px 0 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 1%;
+        div:nth-child(1) {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            font-size: 18px;
+            color: #333;
+            line-height: 18px;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            img {
+              margin-top: -2px;
+              margin-right: 4px;
+            }
+          }
+          span {
+            font-size: 18px;
+            color: #2ac5a9;
+            line-height: 12px;
+          }
+        }
+        div:nth-child(2) {
+          display: flex;
+          justify-content: space-between;
+          p,
+          span {
+            opacity: 0.8;
+            font-size: 14px;
+            color: #666;
+            padding: 8px 0;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+.modal-form-box {
+  padding-right: 30px !important;
+  tr:nth-child(2) {
+    td:nth-child(1)::after {
+      display: none;
+    }
+    td:nth-child(2) .c7n-pro-field {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+.modal-search-btn {
+  background: #4f7de7 !important;
+  color: #fff !important;
+  border: none !important;
+  &:hover {
+    span {
+      color: #fff !important;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.modal-body {
+  font-size: 16px;
+  >div + div {
+    margin-top: 32px;
+  }
+  .operation {
+    .operation-item {
+      width: 100%;
+      height: 48px;
+      line-height: 48px;
+      border: 1px solid #fff;
+      text-align: center;
+      cursor: pointer;
+      &.active {
+        background: #1C879C;
+        border: none;
+      }
+    }
+    .operation-item + .operation-item {
+      margin-top: 12px;
+    }
+  }
+  .group-title {
+    margin-bottom: 12px;
+  }
+  :global {
+    .c7n-pro-select-wrapper {
+      width: 100%;
+      input {
+        height: 48px;
+        border: none;
+        font-size: 20px;
+      }
+    }
+    .c7n-pro-select-suffix .icon-search:before {
+      font-size: 18px;
+      top: 0 !important;
+    }
+  }
+}

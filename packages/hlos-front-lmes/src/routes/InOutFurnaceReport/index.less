@@ -1,0 +1,92 @@
+.lmes-in-out-furnace-report {
+  p {
+    margin-bottom: 0;
+  }
+  .content {
+    padding: 0 23px;
+    .main {
+      display: flex;
+      > div {
+        height: calc(100vh - 368px);
+        overflow-y: scroll;
+        background: #fff;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
+.lmes-in-out-furnace-report-login-modal {
+  width: 36.8vw;
+  :global {
+    .c7n-pro-modal-header {
+      background: #ebebeb;
+      .c7n-pro-modal-title {
+        font-size: 22px;
+        line-height: 31px;
+        color: #666;
+      }
+    }
+    .c7n-pro-field-wrapper {
+      padding: 0;
+      .c7n-pro-select-wrapper,
+      .c7n-pro-calendar-picker-wrapper {
+        height: 48px !important;
+        margin-bottom: 28px;
+        input {
+          height: 48px;
+          font-size: 20px;
+          line-height: 28px;
+          color: #999;
+        }
+        .c7n-pro-select-suffix {
+          .icon-search::before {
+            font-size: 24px;
+            top: 0;
+          }
+          .icon-baseline-arrow_drop_down {
+            top: 0;
+          }
+          .icon-baseline-arrow_drop_down::before {
+            font-size: 24px;
+            color: #0c6b7e;
+          }
+        }
+      }
+      .c7n-pro-calendar-picker-wrapper {
+        width: 60.8%;
+        margin-right: 16px;
+        .c7n-pro-calendar-picker-suffix {
+          .icon-date_range::before {
+            top: 12px;
+            font-size: 24px;
+            color: #0c6b7e;
+          }
+        }
+      }
+    }
+    .c7n-pro-btn-primary {
+      width: 100%;
+      height: 56px !important;
+      margin: 12px 0 20px;
+      background-color: #0c6b7e !important;
+      border: none !important;
+      span {
+        font-size: 22px;
+        line-height: 31px;
+        color: #fff;
+      }
+    }
+  }
+  .date {
+    :global {
+      .c7n-pro-select-wrapper {
+        width: calc(39.2% - 16px);
+      }
+    }
+  }
+  .exit-btn {
+    position: absolute;
+    top: 14px;
+    right: 24px;
+  }
+}

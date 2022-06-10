@@ -1,0 +1,26 @@
+.calendar-header-tabs {
+  width: 100%;
+
+  :global {
+    .c7n-tabs-bar {
+      display: none;
+    }
+  }
+}
+
+.calendar-content-tabs {
+  background-color: white;
+  flex: 1;
+  :global {
+    .c7n-tabs-bar {
+      display: none;
+    }
+    .c7n-tabs-content {
+      height: 100%;
+    }
+    .c7n-tabs-tabpane {
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+}

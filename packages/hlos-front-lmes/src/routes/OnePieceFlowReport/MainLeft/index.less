@@ -1,0 +1,205 @@
+.main-left {
+  flex: 0 0 47.4vw;
+  margin-right: 30px;
+  padding: 22px 22px 16px;
+  .mo-info {
+    .order {
+      font-size: 18px;
+      line-height: 20px;
+      color: #333;
+      span:first-child {
+        margin-right: 32px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+    }
+    > div:not(.progress-wrapper) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 27px;
+      > div {
+        width: calc(100% - 141px);
+        font-weight: 600;
+        font-size: 32px;
+        color: #333;
+        p {
+          margin-bottom: 24px;
+        }
+        p:first-child {
+          color: #1c879c;
+        }
+      }
+      > div:last-child {
+        width: 141px;
+        height: 141px;
+        border: 1px solid #ddd;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .remark {
+      margin: 6px 0 24px;
+      font-size: 20px;
+      color: #666;
+    }
+    .progress-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 22px;
+      line-height: 22px;
+      font-size: 22px;
+      color: #333;
+      .progress {
+        width: 82.4%;
+        height: 13px;
+        border-radius: 2px;
+        background: #e8e8e8;
+        div {
+          border-radius: 2px;
+          background: #1c879c;
+          height: 13px;
+        }
+      }
+    }
+  }
+  .sn-item {
+    margin-top: 65px;
+    padding: 24px 28px;
+    background: #f4f4f4;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    > div {
+      display: flex;
+      p {
+        margin-right: 34px;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+    > p:first-child {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 22px;
+    }
+    > p:nth-child(2) {
+      margin: 16px 0 19px;
+    }
+  }
+  .sn-timeline {
+    margin-top: 42px;
+    padding: 16px 45px;
+    background: #f4f4f4;
+    > p {
+      margin-top: 7px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #1c879c;
+      text-align: center;
+      cursor: pointer;
+    }
+    .timeline {
+      display: flex;
+      .dot-item {
+        width: 25%;
+        > div {
+          display: flex;
+          align-items: center;
+          height: 42px;
+          .circle-wrapper {
+            width: 25%;
+            text-align: center;
+            .circle {
+              display: inline-block;
+              margin: 16px 0 14px;
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background: #43a047;
+            }
+          }
+          .line {
+            width: 75%;
+            height: 1.5px;
+            background: #43a047;
+          }
+        }
+        p {
+          // width: 25%;
+          font-size: 16px;
+          line-height: 21px;
+          color: #333;
+        }
+        .time {
+          margin-top: 4px;
+          font-size: 14px;
+          line-height: 14px;
+          color: #999;
+        }
+        &.current {
+          p {
+            color: #f9a825;
+          }
+          .circle {
+            background: #f9a825 !important;
+          }
+          .line {
+            background: #f9a825;
+          }
+        }
+      }
+    }
+  }
+}
+.lmes-one-piece-flow-report-detail-modal {
+  width: 43.1vw;
+  :global {
+    .c7n-pro-modal-header {
+      background: #ebebeb;
+      border: none;
+      .c7n-pro-modal-title {
+        font-size: 22px;
+        line-height: 31px;
+        color: #666;
+      }
+    }
+    .c7n-pro-modal-footer {
+      border: none;
+      .c7n-pro-btn {
+        width: 121px;
+        height: 48px;
+        background: #1c879c !important;
+        border: none;
+        font-size: 20px;
+        line-height: 18px;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    thead {
+      background: linear-gradient(360deg, #d5d5d5 0%, #e3e3e3 100%), #f6f6f6;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 12px;
+      color: #408599;
+    }
+    tbody {
+      font-size: 14px;
+      line-height: 12px;
+    }
+    tr {
+      height: 48px;
+      text-align: center;
+    }
+  }
+}

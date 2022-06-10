@@ -1,0 +1,37 @@
+.jiachen-opfr-report-right {
+  background: #ffffff;
+  // padding: 30px 40px;
+  // margin-left: 12px;
+  // position: relative;
+  // top: 80px;
+  height: calc(100vh - 155px);
+  position: relative;
+
+  .left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  .right {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+  }
+
+  .left,
+  .right {
+    img {
+      width: 100px;
+      height: 100px;
+      background: #ccc;
+      border-radius: 100px;
+    }
+  }
+
+  .embed {
+    height: calc(100vh - 160px);
+  }
+}

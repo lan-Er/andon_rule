@@ -1,0 +1,79 @@
+@media print {
+  body {
+    .delivery-item-print {
+      // 此处一定要加模块名，避免全局样式污染
+      padding: 0 1.7cm;
+      color: #000;
+      margin: 0;
+      box-sizing: border-box;
+      // @page {
+      //   size: 9.5cm 7cm;
+      //   margin: 0;
+      //   margin-bottom: -1cm;
+      //   overflow: hidden;
+      // }
+      > header {
+        page-break-before: always;
+      }
+      table {
+        color: #000;
+      }
+    }
+  }
+}
+.delivery-item-print {
+  font-family: 'SimHei', sans-serif !important;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 32px;
+  line-height: 60px;
+  padding: 0 60px;
+  font-weight: 500;
+  color: #000;
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div:first-child {
+      font-size: 42px;
+      font-weight: bolder;
+      margin-right: 10px;
+    }
+  }
+  .item-print-info {
+    display: flex;
+    div:first-child {
+      flex: 1;
+    }
+  }
+  .item-print-otherinfo {
+    display: flex;
+    align-items: center;
+    .otherinfo-left {
+      flex: 1;
+    }
+    .otherinfo-right {
+      font-size: 28px;
+      text-align: right;
+    }
+  }
+  .item-print-bottominfo {
+    display: flex;
+    justify-content: space-between;
+    .bottominfo-left {
+      flex: 1;
+      .bottominfo-left-flex {
+        display: flex;
+        align-items: center;
+        div:first-child {
+          width: 60%;
+        }
+      }
+    }
+    .bottominfo-qrcode {
+      img {
+        margin-top: -13px;
+      }
+    }
+  }
+}
